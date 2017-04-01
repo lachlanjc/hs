@@ -2,11 +2,15 @@ import React from "react";
 import palx from "palx";
 import { Box, Text, config } from "axs";
 import { Flex, Heading, Span } from "axs-ui";
-import { map, lowerCase, replace } from "lodash";
+import { map, deburr, lowerCase, kebabCase, replace } from "lodash";
 import Head from "next/head";
 
-const colors = palx("#067df7");
-colors.white = "#ffffff";
+const colors = {
+  base: "#4786f1",
+  accent: "#ff0080",
+  white: "#ffffff"
+};
+colors.gray = palx(colors.base).gray;
 
 const assignments = [
   {
@@ -42,16 +46,21 @@ const groups = [
     description: "Data parsing for TeenShale Network"
   }
 ];
-const SectionHeading = props => (
+const SectionHeading = ({ icon, children, ...props }) => (
   <Heading
     level={2}
     fontSize={4}
+    display="flex"
+    justifyContent="center"
+    alignItems="center"
     color={colors.gray[7]}
     caps
-    center
     mt3
     {...props}
-  />
+  >
+    <Icon name={icon} fill={colors.gray[7]} size={24} mr1 />
+    {children}
+  </Heading>
 );
 const Grid = props => (
   <Box
@@ -69,20 +78,36 @@ const Project = ({ name, url, description }) => (
     is="a"
     href={`https://${url}`}
     target="_blank"
+    id={kebabCase(deburr(name))}
     display="inline-block"
     width={[1, 1 / 2, 1 / 3]}
-    border
-    borderColor={colors.gray[5]}
     align="left"
     m={[0, 2]}
     mt2
     p2
+    border
+    borderColor={colors.gray[5]}
+    css={{
+      ":hover": {
+        borderColor: colors.accent,
+        h3: {
+          color: colors.accent
+        }
+      }
+    }}
   >
     <Heading level={3} fontSize={4} mt0 mb1 color={colors.base}>{name}</Heading>
     <Text fontSize={5} m0 color={colors.gray[9]}>{description}</Text>
   </Box>
 );
-const Icon = ({ name = "square", fill = "#ffffff", size = 16, ...props }) => (
+const Icon = (
+  {
+    name = "square",
+    fill = colors.white,
+    size = 32,
+    ...props
+  }
+) => (
   <Box
     is="img"
     src={`//icon.now.sh/${name}/${size}/${replace(fill, "#", "")}`}
@@ -98,10 +123,7 @@ export default () => (
     <Head>
       <title>@lachlanjc/edu</title>
       <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/basscss-basic@1.0.0/index.css"
-      />
+      <link rel="stylesheet" href="//unpkg.com/basscss-basic@1.0.0/index.css" />
       <style children="a { text-decoration: none !important }" />
     </Head>
     <Box
@@ -119,8 +141,8 @@ export default () => (
         alignItems="center"
         justifyContent="center"
       >
-        <Icon name="github" size={24} fill={colors.gray[1]} mr1 />
-        <Text color={colors.gray[1]} fontSize={6} caps>Source</Text>
+        <Icon name="github" size={24} mr1 />
+        <Text color={colors.white} fontSize={6} caps>Source</Text>
       </Flex>
       <Heading
         my2
@@ -133,25 +155,35 @@ export default () => (
         @lachlanjc/<Span bold>edu</Span>
       </Heading>
       <Box>
-        <Icon name="school" size={32} fill={colors.gray[1]} />
-        <Icon name="code" size={32} fill={colors.gray[1]} mx2 />
-        <Icon name="sentiment_very_satisfied" size={32} fill={colors.gray[1]} />
+        <Icon name="school" />
+        <Icon name="code" mx2 />
+        <Icon name="sentiment_very_satisfied" />
       </Box>
     </Box>
-    {map([["Assignments", assignments], ["Groups", groups]], section => (
-      <Box is="section" id={lowerCase(section[0])} key={lowerCase(section[0])}>
-        <SectionHeading children={section[0]} />
-        <Grid>
-          {map(section[1], item => (
-            <Project
-              name={item.name}
-              url={item.url}
-              description={item.description}
-              key={item.url}
-            />
-          ))}
-        </Grid>
-      </Box>
-    ))}
+    {map(
+      [
+        ["Assignments", "assignment", assignments],
+        ["Groups", "group_work", groups]
+      ],
+      section => (
+        <Box
+          is="section"
+          id={kebabCase(section[0])}
+          key={lowerCase(section[0])}
+        >
+          <SectionHeading icon={section[1]} children={section[0]} />
+          <Grid>
+            {map(section[2], item => (
+              <Project
+                name={item.name}
+                url={item.url}
+                description={item.description}
+                key={item.url}
+              />
+            ))}
+          </Grid>
+        </Box>
+      )
+    )}
   </Box>
 );
