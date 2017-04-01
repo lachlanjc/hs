@@ -1,0 +1,22 @@
+{
+  "name": "greenhouse",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "Lachlan Campbell",
+  "license": "MIT",
+  "dependencies": {
+    "axs": "^1.0.6",
+    "axs-ui": "^1.0.4",
+    "lodash": "^4.17.4",
+    "next": "^2.0.1",
+    "palx": "^1.0.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "victory": "^0.18.3"
+  }
+}
