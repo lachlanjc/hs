@@ -2,7 +2,7 @@ import { split, map, join } from "lodash";
 import { config } from "axs";
 import palx from "palx";
 
-const blue = "#0474f3";
+const blue = "#067df7";
 export const palette = palx(blue);
 
 config.set({ colors: palette });
@@ -11,7 +11,7 @@ export const colors = {
   pink: palette.pink[5],
   red: palette.red[5],
   orange: palette.orange[5],
-  green: palette.teal[7],
+  green: palette.teal[6],
   blue,
   navy: palette.blue[8],
 

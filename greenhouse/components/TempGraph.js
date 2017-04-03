@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  VictoryChart,
-  VictoryArea,
-  VictoryAxis,
-  VictoryLine
-} from "victory-chart";
-import { VictoryLabel, VictoryTooltip, Line } from "victory-core";
+import { VictoryChart, VictoryArea, VictoryAxis } from "victory-chart";
 import { colors, toRGBA, fontFamily } from "../config";
 const data = require("../temp-data.json");
 
@@ -30,7 +24,13 @@ const style = {
 };
 
 export default () => (
-  <VictoryChart animate={{ duration: 768 }} style={{ parent: { fontFamily } }}>
+  <VictoryChart
+    style={{ parent: { fontFamily } }}
+    animate={{
+      duration: 768,
+      onEnter: { duration: 512, after: () => ({ y: 0 }) }
+    }}
+  >
     <VictoryAxis
       independentAxis
       tickValues={[1880, 1900, 1920, 1940, 1960, 1980, 2000]}
@@ -38,7 +38,7 @@ export default () => (
     />
     <VictoryAxis
       dependentAxis
-      tickFormat={tick => tick + "º"}
+      tickFormat={tick => tick + " ºF"}
       style={style.axis}
     />
     <VictoryArea

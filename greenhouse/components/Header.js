@@ -1,14 +1,13 @@
 import React from "react";
 import { Box, Text } from "axs";
-import { Heading, Span } from "axs-ui";
+import { Flex, Heading, Span } from "axs-ui";
 import { colors } from "../config";
 import Icon from "./Icon";
 
 export default () => (
-  <Box
+  <Flex
     is="header"
     color="white"
-    display="flex"
     flexDirection="column"
     alignItems="center"
     justifyContent="center"
@@ -50,15 +49,19 @@ export default () => (
         By Lachlan Campbell
       </Text>
     </Box>
-    <Box
-      is="img"
-      src={`//icon.now.sh/chevron/down/ffffff/32?strokeWidth=1.5`}
-      css={{
-        animation: "pulse .9s ease-in-out infinite",
-        position: "absolute",
-        bottom: 0
-      }}
-      mb4
-    />
-  </Box>
+    <Flex
+      justifyContent="center"
+      css={{ position: "absolute", bottom: 0 }}
+      width={1}
+      pb4
+    >
+      <Box
+        is="img"
+        src={`//icon.now.sh/chevron/down/ffffff/32?strokeWidth=1`}
+        css={{
+          animation: "pulse .9s ease-in-out infinite"
+        }}
+      />
+    </Flex>
+  </Flex>
 );

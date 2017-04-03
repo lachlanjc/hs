@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "axs";
 
-const Container = ({ width = 64, ...props }) => (
+const Container = ({ width = 72, ...props }) => (
   <Box
     mx="auto"
     px={[2, 3]}

@@ -5,9 +5,9 @@ import Container from "./Container";
 import { colors } from "../config";
 
 export default () => (
-  <Container is="footer" display="flex" alignItems="center" py4>
-    <Icon name="public" fill={colors.green} mr1 />
-    <Span bold caps fontSize={4} color={colors.green} mr="auto">
+  <Container is="footer" width={48} display="flex" alignItems="center" px0 py4>
+    <Icon name="public" fill={colors.blue} mr1 />
+    <Span bold caps fontSize={4} color={colors.blue} mr="auto">
       Respect the climate
     </Span>
     <Icon name="build" fill={colors.blue} mr1 />

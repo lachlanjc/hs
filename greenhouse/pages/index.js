@@ -15,17 +15,17 @@ const css = `
   50% { transform: translateY(1.5rem); }
   100% { transform: translateY(0); }
 }
+a { text-decoration: none !important }
 `;
+const style = <style children={css} />;
 
 export default () => (
   <Box>
     <Head>
       <title>Climate change</title>
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/basscss-basic@1.0.0/index.css"
-      />
-      <style children={css} />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <link rel="stylesheet" href="https://unpkg.com/basscss-basic/index.css" />
+      {style}
     </Head>
     <Header />
     <Body />

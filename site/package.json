@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start"
   },
-  "keywords": [],
   "author": "Lachlan Campbell",
   "license": "MIT",
   "dependencies": {
