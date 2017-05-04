@@ -47,10 +47,7 @@ const lines = [
 
 export default () => (
   <div>
-    <VictoryChart
-      padding={{ top: 16, bottom: 48 }}
-      style={{ parent: { fontFamily } }}
-    >
+    <VictoryChart padding={48} style={{ parent: { fontFamily } }}>
       <VictoryAxis
         independentAxis
         tickValues={[1850, 1875, 1900, 1925, 1950, 1975, 2005]}
