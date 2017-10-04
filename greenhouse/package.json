@@ -10,13 +10,13 @@
   "author": "Lachlan Campbell",
   "license": "MIT",
   "dependencies": {
-    "axs": "^1.0.6",
+    "axs": "^1.0.4",
     "axs-ui": "^1.0.4",
     "lodash": "^4.17.4",
-    "next": "^2.0.1",
+    "next": "beta",
     "palx": "^1.0.2",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "victory": "^0.18.3"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "victory": "^0.23.0"
   }
 }
