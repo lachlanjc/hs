@@ -1,8 +1,8 @@
-import React from "react";
-import { Box, Text } from "axs";
-import { colors } from "../config";
-import Container from "./Container";
-import { UL, LI, B, G, Separator, Step, StepDetail } from "./More";
+import React from 'react'
+import { Box, Text } from 'axs'
+import { colors } from '../config'
+import Container from './Container'
+import { UL, LI, B, G, Separator, Step, StepDetail } from './More'
 
 const Steps = () => (
   <Container width={48} mt={128} p0>
@@ -23,21 +23,21 @@ const Steps = () => (
       </Text>
     </Step>
     <Step>
-      The atmosphere now has{" "}
-      <B>~404 ppm CO<sub>2</sub></B> <G>(350 ppm is safe)</G>.{" "}
+      The atmosphere now has{' '}
+      <B>~404 ppm CO<sub>2</sub></B> <G>(350 ppm is safe)</G>.{' '}
       <StepDetail>
         There is no way to undo our damage, but stopping carbon pollution will reduce further damage.
       </StepDetail>
     </Step>
     <Step>
-      Scientists project{" "}<B>9+ ºF this century</B>
+      Scientists project{' '}<B>9+ ºF this century</B>
       —and 4º F would be disastrous.
       <StepDetail>
         The majority of models so far have underestimated warming.
       </StepDetail>
     </Step>
     <Step>
-      <B>Climate change impacts everything.</B>{" "}
+      <B>Climate change impacts everything.</B>{' '}
       It is certainly unethical to threaten 25% of species,
       but the consequences of climate change to humans will be immense.
       <UL fontSize={4} color={colors.greyDark} mt2>
@@ -82,5 +82,5 @@ const Steps = () => (
       </Box>
     </Step>
   </Container>
-);
-export default Steps;
+)
+export default Steps

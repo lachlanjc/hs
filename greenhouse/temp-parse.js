@@ -1,7 +1,7 @@
 // After making changes here: `babel-node temp-parse.js`
 
-const _ = require("lodash");
-const fs = require("fs");
+const _ = require('lodash')
+const fs = require('fs')
 
 let data = [
   {
@@ -544,24 +544,24 @@ let data = [
     year: 2014,
     mean: 0.67
   }
-];
+]
 
-const fields = _.without(_.keys(data[0]), "year");
+const fields = _.without(_.keys(data[0]), 'year')
 
 _.times(data.length, index => {
-  const year = data[index].year;
-  let record = { year };
+  const year = data[index].year
+  let record = { year }
   _.forEach(fields, field => {
-    record[field] = data[index][field] * 1.8;
-  });
-  data[index] = record;
+    record[field] = data[index][field] * 1.8
+  })
+  data[index] = record
   // console.log(record, newRecord);
-});
+})
 
-fs.writeFile("./temp-data.json", JSON.stringify(data), err => {
+fs.writeFile('./temp-data.json', JSON.stringify(data), err => {
   if (err) {
-    console.log(err);
+    console.log(err)
   } else {
-    console.log("✅ Parsed data");
+    console.log('✅ Parsed data')
   }
-});
+})

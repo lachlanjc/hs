@@ -1,7 +1,7 @@
-import React from "react";
-import { VictoryChart, VictoryArea, VictoryAxis } from "victory-chart";
-import { colors, toRGBA, fontFamily } from "../config";
-const data = require("../temp-data.json");
+import React from 'react'
+import { VictoryChart, VictoryArea, VictoryAxis } from 'victory-chart'
+import { colors, toRGBA, fontFamily } from '../config'
+const data = require('../temp-data.json')
 
 const style = {
   axis: {
@@ -21,7 +21,7 @@ const style = {
       strokeWidth: 1
     }
   }
-};
+}
 
 export default () => (
   <VictoryChart
@@ -38,7 +38,7 @@ export default () => (
     />
     <VictoryAxis
       dependentAxis
-      tickFormat={tick => tick + " ºF"}
+      tickFormat={tick => tick + ' ºF'}
       style={style.axis}
     />
     <VictoryArea
@@ -55,4 +55,4 @@ export default () => (
       }}
     />
   </VictoryChart>
-);
+)

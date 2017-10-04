@@ -1,8 +1,8 @@
-import React from "react";
-import { Span } from "axs-ui";
-import Icon from "./Icon";
-import Container from "./Container";
-import { colors } from "../config";
+import React from 'react'
+import { Span } from 'axs-ui'
+import Icon from './Icon'
+import Container from './Container'
+import { colors } from '../config'
 
 export default () => (
   <Container is="footer" display="flex" alignItems="center" py4>
@@ -14,4 +14,4 @@ export default () => (
     <Span children="by @lachlanjc" color={colors.grey} mr1 />
     <Icon name="favorite" fill={colors.pink} />
   </Container>
-);
+)

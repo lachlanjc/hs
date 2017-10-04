@@ -1,7 +1,7 @@
 // After making changes here: `babel-node forcings-parse.js`
 
-const _ = require("lodash");
-const fs = require("fs");
+const _ = require('lodash')
+const fs = require('fs')
 
 let data = [
   {
@@ -2032,25 +2032,25 @@ let data = [
     solar: 287.45315707300625,
     volcanic: 287.53774435793326
   }
-];
+]
 
-const fields = _.without(_.keys(data[0]), "year");
+const fields = _.without(_.keys(data[0]), 'year')
 
 _.times(data.length, index => {
-  const year = data[index].year;
-  let record = { year };
+  const year = data[index].year
+  let record = { year }
   _.forEach(fields, field => {
     // const c = _.subtract(data[index][field], 273.15)
-    record[field] = (data[index][field] - 273.15) * 9 / 5 + 32;
-  });
-  data[index] = record;
+    record[field] = (data[index][field] - 273.15) * 9 / 5 + 32
+  })
+  data[index] = record
   // console.log(record, newRecord);
-});
+})
 
-fs.writeFile("./forcings-data.json", JSON.stringify(data), err => {
+fs.writeFile('./forcings-data.json', JSON.stringify(data), err => {
   if (err) {
-    console.log(err);
+    console.log(err)
   } else {
-    console.log("✅ Parsed data");
+    console.log('✅ Parsed data')
   }
-});
+})

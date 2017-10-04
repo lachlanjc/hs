@@ -1,8 +1,8 @@
-import React from "react";
-import { Box, Text } from "axs";
-import { Flex, Heading, Span } from "axs-ui";
-import { colors } from "../config";
-import Icon from "./Icon";
+import React from 'react'
+import { Box, Text } from 'axs'
+import { Flex, Heading, Span } from 'axs-ui'
+import { colors } from '../config'
+import Icon from './Icon'
 
 export default () => (
   <Flex
@@ -14,23 +14,23 @@ export default () => (
     center
     css={{
       backgroundImage: "url('/static/hero.jpg')",
-      backgroundPositionY: "25%",
-      backgroundSize: "cover",
-      height: "100vh",
-      position: "relative",
-      textShadow: "0 2px 1px rgba(0, 0, 0, .75)",
-      boxShadow: "inset 0 0 50vh 50vw rgba(0,0,0,.25)"
+      backgroundPositionY: '25%',
+      backgroundSize: 'cover',
+      height: '100vh',
+      position: 'relative',
+      textShadow: '0 2px 1px rgba(0, 0, 0, .75)',
+      boxShadow: 'inset 0 0 50vh 50vw rgba(0,0,0,.25)'
     }}
   >
     <Heading level={1}>
       Climate change is a
-      {" "}
+      {' '}
       <Span
         bg={colors.white}
         color={colors.navy}
         px2
         py1
-        css={{ borderRadius: "2.5rem 1.5rem", textShadow: "none" }}
+        css={{ borderRadius: '2.5rem 1.5rem', textShadow: 'none' }}
       >
         serious threat.
       </Span>
@@ -41,7 +41,7 @@ export default () => (
     <Box css={{ opacity: 0.8 }}>
       <Box
         is="hr"
-        css={{ width: 72, height: 3, border: 0, backgroundColor: "white" }}
+        css={{ width: 72, height: 3, border: 0, backgroundColor: 'white' }}
         mx="auto"
         my3
       />
@@ -51,7 +51,7 @@ export default () => (
     </Box>
     <Flex
       justifyContent="center"
-      css={{ position: "absolute", bottom: 0 }}
+      css={{ position: 'absolute', bottom: 0 }}
       width={1}
       pb4
     >
@@ -59,9 +59,9 @@ export default () => (
         is="img"
         src={`//icon.now.sh/chevron/down/ffffff/32?strokeWidth=1`}
         css={{
-          animation: "pulse .9s ease-in-out infinite"
+          animation: 'pulse .9s ease-in-out infinite'
         }}
       />
     </Flex>
   </Flex>
-);
+)
