@@ -2,7 +2,7 @@
 
 Hacking on school projects.
 
-See the website: [**lachlanjc-edu.now.sh**](https://lachlanjc-edu.now.sh/)
+Website: [**lachlanjc.glitch.me/edu**](https://lachlanjc.glitch.me/edu)
 
 ## Assignments
 - [**Astrocolony**](https://astrocolony.now.sh/) – Brochure about a proposed space colony on Titan.
