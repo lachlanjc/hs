@@ -57,6 +57,7 @@ const Article = Container.extend.attrs({ py: 2 })`
     font-style: italic;
     grid-column: 2;
     margin-left: -8rem;
+    em, strong { font-style: normal; font-weight: 700; }
   }
   h2 {
     color: ${colors.primary};
@@ -165,7 +166,7 @@ const App = () => (
       </p>
       <h2>
         Men have taken advantage of women for all of history, forcing them to
-        stay at home, care for children, and leave men to do the
+        stay at home, care for children, and leave men to do the {' '}
         <em>real work</em>.
       </h2>
 
