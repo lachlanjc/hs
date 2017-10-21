@@ -2,4 +2,6 @@
 
 A Titan space colony designed for an astronomy class.
 
-https://astrocolony.now.sh/
+https://lachlanjc.me/edu/astrocolony/site
+
+MIT License
