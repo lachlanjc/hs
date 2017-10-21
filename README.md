@@ -13,7 +13,7 @@ Website: [**lachlanjc.glitch.me/edu**](https://lachlanjc.glitch.me/edu)
 - [**Le Petit Prince 14**](https://petit-prince-14.now.sh/) – Presentation about chapter 14 of Le Petit Prince.
 
 ## Groups
-- [**Hack Club**](https://schacks.github.io/) – Website for Hack Club at State High.
+- [**Hack Club**](https://schacks.tech/) – Website for Hack Club at State High.
 - [**TeenShale Data**](https://teenshaledata.lachlanjc.me/) – Utility for averaging stream quality data for the TeenShale Network.
 
 ___
