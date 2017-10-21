@@ -57,7 +57,7 @@ const Article = Container.extend.attrs({ py: 2 })`
     font-style: italic;
     grid-column: 2;
     margin-left: -8rem;
-    em, strong { font-style: normal; font-weight: 700; }
+    em { font-style: normal; }
   }
   h2 {
     color: ${colors.primary};
@@ -306,10 +306,8 @@ const App = () => (
       </p>
 
       <h2>
-        <em>
-          Sexism was not a new phenomenon at this point in history, and
-          absolutely extends to the modern day.
-        </em>
+        Sexism was not a new phenomenon at this point in history, and
+        absolutely extends to the modern day.
       </h2>
 
       <img src="https://user-images.githubusercontent.com/5074763/31848262-12c29ab8-b5fc-11e7-9bbf-e91aa61e9855.png" />
