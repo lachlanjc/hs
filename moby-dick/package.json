@@ -1,0 +1,20 @@
+{
+  "name": "moby-dick",
+  "version": "1.0.0",
+  "description": "Essay on Moby Dick",
+  "scripts": {
+    "dev": "x0 dev src/App.js -op 8080",
+    "build": "x0 build src/App.js -s -d . --cssLibrary='styled-components'",
+    "start": "serve ."
+  },
+  "author": "Lachlan Campbell",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rebass": "^1.0.4"
+  },
+  "dependencies": {
+    "serve": "^6.4.3"
+  }
+}

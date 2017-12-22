@@ -2,9 +2,13 @@
 
 Hacking on school projects.
 
-Website: [**lachlanjc.glitch.me/edu**](https://lachlanjc.glitch.me/edu)
+Website: [**lachlanjc.me/edu**](https://lachlanjc.me/edu)
 
-## Assignments
+## Eleventh Grade
+- [***Moby Dick*: Whales For Three**](https://lachlanjc.me/edu/moby-dick) – Essay.
+- [***Their Eyes Were Watching God***](https://lachlanjc.me/edu/watching-god) – Essay.
+
+## Tenth Grade
 - [**Greenhouse**](https://greenhouse.now.sh/) – Website urging for action on climate change.
 - [**Twenties**](https://twenties.now.sh/) – Presentation about consumerism in the 1920s US.
 - [***Their Eyes Were Watching God***](https://lachlanjc.me/edu/watching-god) - Essay about the book by Zora Neale Hurston.
