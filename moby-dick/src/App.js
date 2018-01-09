@@ -191,17 +191,17 @@ export default () => (
         <p>
           Chiefly, the ship has Ahab at the helm, a man whose mental capacities
           beyond endlessly pursuing utter revenge are questionable. Melville
-          does shine some light on the more human side of the captain sharing
-          details about his life with Starbuck. As he reflects in “The
-          Symphony”, Ahab finds himself lonely after forty years at sea. He slew
-          his first whale at age eighteen, and has barely even paused, only
-          returning to Nantucket to see his wife a few times over his life.
-          Nonetheless, the captain resolves more strongly than ever to continue
-          his fixation, pursuing the White Whale until the bitter end. In the
-          chapter “Moby Dick”, Ishmael says, “with the mad secret of his
-          unabated rage bolted up and keyed in him, Ahab had purposely sailed
-          upon the present voyage with the one only and all-engrossing object of
-          hunting the White Whale.”
+          does illuminate the more human side of the captain sharing details
+          about his life with Starbuck. As he reflects in “The Symphony,” Ahab
+          finds himself lonely after forty years at sea. He slew his first whale
+          at age eighteen, and has barely even paused, only returning to
+          Nantucket to see his wife a few times over his life. Nonetheless, the
+          captain resolves more strongly than ever to continue his fixation,
+          pursuing the White Whale until the bitter end. In the chapter “Moby
+          Dick,” Ishmael says, “with the mad secret of his unabated rage bolted
+          up and keyed in him, Ahab had purposely sailed upon the present voyage
+          with the one only and all-engrossing object of hunting the White
+          Whale.”
         </p>
 
         <p>
@@ -221,7 +221,7 @@ export default () => (
         <p>
           The language the narrator/Ishmael use to refer to the whale indicates
           the royal esteem in which they hold whales. Describing groups of the
-          “fish” in “Schools and Schoolmasters”, he directly compares whales to
+          “fish” in “Schools and Schoolmasters,” he directly compares whales to
           religious figures: “Gently he insinuates his vast bulk among them
           again and revels there awhile, still in tantalizing vicinity to young
           Lothario, like pious Solomon devoutly worshipping among his thousand
@@ -229,7 +229,7 @@ export default () => (
           describes “a wild, mystical, sympathetical feeling” on the boat from
           “the peculiar terror [Moby Dick] bred” and the “monomaniac incarnation
           of all those malicious agencies” as the whale with its “supernatural
-          surmisings” “haunted those uncivilized seas”.
+          surmisings” “haunted those uncivilized seas.”
         </p>
 
         <p>
@@ -237,10 +237,10 @@ export default () => (
           would pursue them in this fashion until the end of time (or their
           death, whichever came first). But in the novel, Moby Dick ascends to
           being a higher force, and the demise of the creature becomes
-          irresistible for Ahab and the ship’s crew to pursue. It is Melville’s
-          true perception that whales are an awe-inspiring creation, and he
-          brings such a feeling at an extreme level to his cast of characters on
-          the <em>Pequod</em>.
+          irresistible for Ahab and the ship’s crew to pursue. Melville’s
+          perceives whales as awe-inspiring creations, and he brings such a
+          feeling at an extreme level to his cast of characters on the{' '}
+          <em>Pequod</em>.
         </p>
       </Article>
 
@@ -256,9 +256,9 @@ export default () => (
         </blockquote>
 
         <p className="first_letter">
-          “Cetology”, “The Sperm Whale&#39;s Head—Contrasted View”, “The Right
-          Whale’s Head—Contrasted View”, “The Battering-Ram”, “The Great
-          Heidelburgh Tun”, “The Prairie”, “The Nut”, and “A Bower in the
+          “Cetology,” “The Sperm Whale&#39;s Head—Contrasted View,” “The Right
+          Whale’s Head—Contrasted View,” “The Battering-Ram,” “The Great
+          Heidelburgh Tun,” “The Prairie,” “The Nut,” and “A Bower in the
           Arsacides” are just a few of the literally dozens of chapters devoted
           to facts and information about whales throughout the novel. While
           Melville penned <em>Moby Dick</em> in most decidedly a pre-Twitter
@@ -278,23 +278,23 @@ export default () => (
 
         <p>
           At one point while inspecting a whale’s body, Ishmael writes “I have
-          been blessed with an opportunity to dissect him in miniature”. He
+          been blessed with an opportunity to dissect him in miniature.” He
           apologizes for any inaccuracies in his measurements of the various
           bones. He spends more chapters correcting misconceptions about whales,
           as people with true passions are wont to do; in what he must see as a
           service to his readers, he spends many pages explaining the incorrect
           details saved in various drawings of whales. “Serious fault might be
-          found with the anatomical details of this whale”, he comments of one.
+          found with the anatomical details of this whale,” he comments of one.
         </p>
 
         <p>
-          The scientific perspective is not one readers would likely consider if
+          Readers would likely not consider the scientific perspective if
           Ishmael was not so adamant about including it. With our modern
           societal approach towards animals of assuming we know everything
           important, we lose the sense of unending curiosity so clearly
           occupying Ishmael. The perspective he brings by studying whales in the
-          book deepens their character in the narrative: they are no longer
-          merely hunter’s victims or gods, but rather they take on another
+          book deepens their character in the narrative: he makes them no longer
+          merely hunter’s victims or gods, but rather augments them with another
           dimension.
         </p>
       </Article>
@@ -387,24 +387,24 @@ export default () => (
         </p>
 
         <p>
-          In the chapter “Does the Whale’s Magnitude Diminish?—Will He Perish?”,
+          In the chapter “Does the Whale’s Magnitude Diminish?—Will He Perish?,”
           Ishmael begins to consider the possibility of it not all being “honour
-          and glory of the whale-ship”. He brings up the concern that whalers
+          and glory of the whale-ship.” He brings up the concern that whalers
           could be hunting whales to extinction, and postulates whales having
           shrunken since the start of human whaling, because the ones described
           by ancient Roman naturalists were larger. As a capitalist, a man whose
-          main drive is for profit, Ishmael is able to naturally conclude there
-          are no moral issues with whaling. He justifies this nonsense by
+          main drive is for profit, Ishmael naturally concludes there are no
+          moral issues with whaling. He justifies this nonsense by
           hypothesizing, without any evidence of such a shift, that the pattern
           in which whales swim is more spread out than it was in the past.<sup>
             <a id="ffn8" href="#fn8">
               8
             </a>
           </sup>{' '}
-          Ishmael feels there are so many whales, they could never go the way of
-          the American buffalo from just a few hunts (13,000, to be specific).
-          He dismisses all these concerns, concluding, “we account the whale
-          immortal in his species, however perishable in his individuality”, and
+          Ishmael feels so many whales exist, they could never go the way of the
+          American buffalo from just a few hunts (13,000, to be specific). He
+          dismisses all these concerns, concluding, “we account the whale
+          immortal in his species, however perishable in his individuality,” and
           “the eternal whale will still survive, and…spout his frothed defiance
           to the skies.”
         </p>
@@ -457,7 +457,7 @@ export default () => (
           </li>
           <li id="fn3">
             <a href="https://www.co2.earth/">https://www.co2.earth/</a> Because
-            there are so many more trees in the Northern hemisphere, CO2
+            so many more trees exist in the Northern hemisphere, CO2
             concentrations go down when it is summer in the North, then rise in
             the winter. <a href="#ffn3">&#x21A9;&#xFE0E;</a>
           </li>
