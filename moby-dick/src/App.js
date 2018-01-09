@@ -64,6 +64,14 @@ const Article = Container.extend.attrs({ p: 3 })`
       grid-column: 1;
     }
   }
+
+  @media print {
+    > p {
+      font-size: 1rem;
+      max-width: 32rem;
+      margin: 1rem auto .5rem;
+    }
+  }
 `
 
 const Footnotes = Box.extend.attrs({
@@ -77,7 +85,7 @@ const Footnotes = Box.extend.attrs({
   border-radius: .5rem;
   word-break: break-word;
   &:before {
-    content: 'Footnotes';
+    content: 'Endnotes';
     display: block;
     font-weight: 700;
     letter-spacing: .1em;
@@ -91,6 +99,14 @@ const Slide = Banner.extend.attrs({ color: 'white', p: [2, 3, 4] })`
   max-height: 100vh;
   text-shadow: 0 .25rem .5rem rgba(0,0,0,.5);
   h1, h2 { font-weight: 800; }
+  @media print {
+    background: none !important;
+    color: black !important;
+    text-shadow: none !important;
+    padding: 2rem !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
 `
 const HeaderSlide = Slide.extend`
   min-height: 100vh;
@@ -104,6 +120,13 @@ const LastBanner = Banner.extend.attrs({ color: 'white', mt: 3, mb: 2 })`
   h2 {
     font-weight: 800;
     text-shadow: 0 .125rem .5rem rgba(0,0,0,.25);
+  }
+  @media print {
+    background: none !important;
+    color: black !important;
+    text-shadow: none !important;
+    padding: 2rem !important;
+    height: auto !important;
   }
 `
 
@@ -486,7 +509,5 @@ const css = `
 @font-face{font-family:Slack-Averta;font-style:italic;font-weight:400;src:url(https://a.slack-edge.com/436da/marketing/fonts/averta/averta-regular-italic.woff2) format('woff2'),url(https://a.slack-edge.com/436da/marketing/fonts/averta/averta-regular-italic.woff) format('woff');unicode-range:U+0000-F8FE,U+F900-FFFF}
 @font-face{font-family:Slack-Tiempos;font-style:normal;font-weight:400;src:url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-headline/tiempos-headline-regular.woff2) format('woff2'),url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-headline/tiempos-headline-regular.woff) format('woff');unicode-range:U+0000-F8FE,U+F900-FFFF}
 @font-face{font-family:Slack-Tiempos;font-style:italic;font-weight:400;src:url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-text/tiempos-text-regular-italic.woff2) format('woff2'),url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-text/tiempos-text-regular-italic.woff) format('woff');unicode-range:U+0000-F8FE,U+F900-FFFF}
-@font-face{font-family:Slack-Tiempos;font-style:normal;font-weight:500;src:url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-headline/tiempos-headline-semibold.woff2) format('woff2'),url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-headline/tiempos-headline-semibold.woff) format('woff');unicode-range:U+0000-F8FE,U+F900-FFFF}
-@font-face{font-family:Slack-Tiempos;font-style:italic;font-weight:500;src:url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-text/tiempos-text-semibold-italic.woff2) format('woff2'),url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-text/tiempos-text-semibold-italic.woff) format('woff');unicode-range:U+0000-F8FE,U+F900-FFFF}
 @font-face{font-family:Slack-Tiempos;font-style:normal;font-weight:700;src:url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-headline/tiempos-headline-bold.woff2) format('woff2'),url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-headline/tiempos-headline-bold.woff) format('woff');unicode-range:U+0000-F8FE,U+F900-FFFF}
 `
