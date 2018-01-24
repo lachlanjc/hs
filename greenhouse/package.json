@@ -6,17 +6,16 @@
     "build": "next build",
     "start": "next start"
   },
-  "keywords": [],
   "author": "Lachlan Campbell",
   "license": "MIT",
   "dependencies": {
-    "axs": "^1.0.4",
+    "axs": "^4.0.0-1",
     "axs-ui": "^1.0.4",
     "lodash": "^4.17.4",
-    "next": "beta",
+    "next": "^4.2.3",
     "palx": "^1.0.2",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "victory": "^0.23.0"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "victory": "^0.24.5"
   }
 }
