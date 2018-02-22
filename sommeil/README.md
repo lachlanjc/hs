@@ -1,4 +1,4 @@
-# 😴  Sommeeil
+# 😴 Sommeil
 
 A brochure about sleep (in French).
 
