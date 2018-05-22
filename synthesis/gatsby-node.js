@@ -6,7 +6,7 @@ const { createFilePath } = require('gatsby-source-filesystem')
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === 'MarkdownRemark') {
     const value = createFilePath({ node, getNode })
     createNodeField
   }
@@ -16,7 +16,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    const component = path.resolve('./src/templates/card.js')
+    const component = path.resolve('./src/templates/article.js')
     resolve(
       graphql(
         `
@@ -24,9 +24,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             allMarkdownRemark(limit: 1024) {
               edges {
                 node {
-                	frontmatter {
-                	  author
-                	}
+                  frontmatter {
+                    slug
+                  }
                 }
               }
             }
@@ -38,12 +38,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors)
         }
 
-        // Create blog posts pages.
         _.each(result.data.allMarkdownRemark.edges, edge => {
           createPage({
-            path: edge.node.frontmatter.author,
+            path: edge.node.frontmatter.slug,
             component,
-            context: { author: edge.node.frontmatter.author }
+            context: { slug: edge.node.frontmatter.slug }
           })
         })
       })

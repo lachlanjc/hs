@@ -1,17 +1,29 @@
 import { theme } from '@hackclub/design-system'
 
-export const colors = {
-  primary: '#ff16D1',
-  black: '#1f2d3d',
-  steel: '#273444',
-  slate: '#3c4858',
-  grey: '#8492a6',
-  smoke: '#e0e6ed',
-  snow: '#f9fafc',
+export const grays = {
+  black: '#1F2D3D',
+  slate: '#3C4858',
+  silver: '#8492a6',
+  smoke: '#E0E6ED',
+  snow: '#F9FAFC',
   white: '#ffffff'
 }
 
+export const brand = {
+  primary: '#f13a59',
+  accent: '#371eac',
+  success: '#00d480',
+  info: '#00a2c7',
+  warning: '#ff5b0f',
+  error: '#d32d4a',
+  muted: grays.silver
+}
+
+export const colors = {
+  ...grays,
+  ...brand
+}
+
 theme.colors = colors
-theme.font = '"Fakt Soft", Roboto, sans-serif'
 
 export default theme
