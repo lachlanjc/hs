@@ -208,29 +208,29 @@ export default class Documentation extends Component {
 }
 
 const DocH2 = ({ children }) => (
-  <div>
+  <>
     <Heading lean>
       <H2>{children}</H2>
     </Heading>
     <style jsx>{`
-      div {
+       {
         margin: 40px 0 0 0;
       }
     `}</style>
-  </div>
+  </>
 )
 
 const DocH3 = ({ children }) => (
-  <div>
+  <>
     <Heading lean>
       <H3>{children}</H3>
     </Heading>
     <style jsx>{`
-      div {
+       {
         margin: 30px 0 0 0;
       }
     `}</style>
-  </div>
+  </>
 )
 
 export const components = {

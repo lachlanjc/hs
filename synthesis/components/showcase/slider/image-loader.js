@@ -26,11 +26,11 @@ class ImageLoader extends React.Component {
 
   render() {
     const { item, className } = this.props
-    const { src, data } = item
+    const { src } = item
     const { loaded } = this.state
     return (
       <div className={className}>
-        <img className="data" src={data} />
+        {/* <img className="data" src={data} /> */}
         <img
           className={`src ${loaded ? 'loaded' : 'loading'}`}
           ref={this.imageRef}
@@ -45,6 +45,7 @@ class ImageLoader extends React.Component {
               opacity: 1;
             }
           }
+          /*
           .data {
             opacity: 0;
             animation-delay: 0.2s;
@@ -52,6 +53,7 @@ class ImageLoader extends React.Component {
             animation-duration: 0.5s;
             animation-fill-mode: forwards;
           }
+          */
           .src {
             transition: opacity 0.2s ease;
           }

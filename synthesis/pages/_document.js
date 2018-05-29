@@ -62,24 +62,11 @@ export default class MyDocument extends Document {
             content="/static/favicon/browserconfig.xml"
           />
           <meta name="theme-color" content="#000" />
+          <link rel="stylesheet" href="/static/fonts.css" />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_TRACKING_ID}');
-              `
-            }}
-          />
         </body>
       </html>
     )
