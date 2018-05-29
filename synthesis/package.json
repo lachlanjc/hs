@@ -1,42 +1,34 @@
 {
-  "name": "maxday",
-  "description": "Happy birthday, Max",
-  "version": "1.0.0",
-  "author": "Lachlan Campbell",
-  "private": true,
-  "dependencies": {
-    "@hackclub/design-system": "^0.0.1-10",
-    "gatsby": "^1.9.261",
-    "gatsby-link": "^1.6.44",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-react-next": "^1.0.11",
-    "gatsby-plugin-styled-components": "^2.0.11",
-    "gatsby-remark-images": "^1.5.63",
-    "gatsby-remark-smartypants": "^1.4.12",
-    "gatsby-source-filesystem": "^1.5.36",
-    "gatsby-transformer-remark": "^1.7.41",
-    "lodash": "^4.17.10",
-    "react-helmet": "^5.2.0",
-    "serve": "^6.5.8",
-    "styled-components": "^3.2.6"
+  "name": "syntehsis",
+  "description": "Synthesis essay",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "now-build": "yarn run build && yarn run export",
+    "now-start": "serve out"
   },
-  "devDependencies": {
-    "prettier": "^1.12.1"
-  },
-  "homepage": "https://maxday.hackclub.com",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zanedb/maxday"
+    "url": "git+https://github.com/lachlanjc/edu.git"
   },
-  "scripts": {
-    "dev": "gatsby develop",
-    "fmt": "prettier --no-semi --single-quote --write 'src/**/*.js' 'days/**/*.md'",
-    "build": "gatsby build",
-    "start": "serve public"
+  "author": "Lachlan Campbell",
+  "license": "MIT",
+  "dependencies": {
+    "@mdx-js/mdx": "0.9.0",
+    "@zeit/next-mdx": "1.1.0",
+    "intersection-observer": "0.5.0",
+    "lodash.debounce": "4.0.8",
+    "mitt": "1.1.3",
+    "next": "6.0.3",
+    "nprogress": "0.2.0",
+    "react": "16.4.0",
+    "react-dom": "16.4.0",
+    "react-slick": "0.23.1",
+    "react-transition-group": "^2.3.1",
+    "scroll-into-view-if-needed": "1.5.0",
+    "serve": "^7.1.1"
   }
 }

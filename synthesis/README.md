@@ -1,32 +1,19 @@
-# maxday
+# Next.js website
 
-Happy birthday, Max. 🎂
+The official website for Next.js
 
-Welcome! April 25 is [Max Wofford](https://maxwofford.com/)'s birthday, and the goal of this site (and this repository) is to display his birthday wishes.
+## Contribution
 
-### Leave a birthday wish by creating a file [in cards](https://github.com/hackclub/maxday/tree/master/cards)
+To submit a feature, bug fix, or enhancement to the website proceed as follows:
 
-Name the file after your first name, and place the following lines at the start of it:
+1. Clone this repo
+2. Within your terminal, run `yarn` to install the dependencies
+3. Once the dependencies are installed, run `yarn dev` to start the dev server on `localhost:3000`
 
-    ---
-    author: 'your first name, same as filename'
-    ---    
+We really appreciate any contribution.
 
-Check out this [Mingjie's card](https://github.com/hackclub/maxday/blob/master/cards/mingjie.md) as an example of how to write one.
+## Related Repositories
 
-## Site Setup
+- [Next.js](https://github.com/zeit/next.js)
+- [Next.js Plugins](https://github.com/zeit/next-plugins)
 
-1. Clone the repository and enter it
-```
-git clone https://github.com/hackclub/maxday
-cd maxday
-```
-2. Update submodules (this may take a little while)
-```
-git submodule init && git submodule update
-```
-3. Install packages & run
-```
-yarn && yarn run dev
-```
-4. It should now be running, open [localhost:8000](http://localhost:8000) to view it
