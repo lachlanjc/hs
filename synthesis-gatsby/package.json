@@ -1,0 +1,43 @@
+{
+  "name": "maxday",
+  "description": "Happy birthday, Max",
+  "version": "1.0.0",
+  "author": "Lachlan Campbell",
+  "private": true,
+  "dependencies": {
+    "@hackclub/design-system": "^0.0.1-10",
+    "gatsby": "^1.9.261",
+    "gatsby-link": "^1.6.44",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-react-next": "^1.0.11",
+    "gatsby-plugin-styled-components": "^2.0.11",
+    "gatsby-remark-images": "^1.5.63",
+    "gatsby-remark-smartypants": "^1.4.12",
+    "gatsby-source-filesystem": "^1.5.36",
+    "gatsby-transformer-remark": "^1.7.41",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.10",
+    "react-helmet": "^5.2.0",
+    "serve": "^6.5.8",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.1"
+  },
+  "homepage": "https://maxday.hackclub.com",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zanedb/maxday"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "fmt": "prettier --no-semi --single-quote --write 'src/**/*.js' 'days/**/*.md'",
+    "build": "gatsby build",
+    "start": "serve public"
+  }
+}
