@@ -10,8 +10,8 @@ export default ({ children, color, href, className }) => (
           justify-content: center;
           align-content: center;
           align-items: center;
-          width: 200px;
-          height: 50px;
+          width: 256px;
+          height: 48px;
           border-radius: 50px;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
           cursor: pointer;
@@ -24,11 +24,11 @@ export default ({ children, color, href, className }) => (
         }
         .white {
           background-color: #ffffff;
-          color: #000000;
+          color: rgb(189, 16, 224);
           transition: all 0.2s ease;
         }
-        .black {
-          background-color: #000000;
+        .primary {
+          background-color: rgb(189, 16, 224);
           color: #ffffff;
           transition: all 0.2s ease;
         }
@@ -37,9 +37,9 @@ export default ({ children, color, href, className }) => (
           color: #ffffff;
           transition: all 0.2s ease;
         }
-        a.black:hover {
+        a.primary:hover {
           background-color: #ffffff;
-          color: #000000;
+          color: rgb(189, 16, 224);
           transition: all 0.2s ease;
         }
       `}</style>

@@ -1,11 +1,12 @@
 import ExternalLink from '../../icons/external-link'
+import humanizeUrl from 'humanize-url'
 
 function SlideInformation({ title, href }) {
   return (
     <section>
       <h2>{title}</h2>
       <a target="_blank" href={href}>
-        {href}
+        {href && humanizeUrl(href)}
         <ExternalLink />
       </a>
       <style jsx>{`

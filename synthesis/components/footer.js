@@ -1,18 +1,15 @@
-import ZeitLogo from './zeit-logo'
+import Avatar from './avatar'
 
 const Footer = () => (
   <footer>
     <div className="container">
+      <Avatar />
       <nav>
         <a href="https://github.com/zeit/next.js/releases">Changelog</a>
         <a className="github" href="https://github.com/zeit/next.js">
           GitHub
         </a>
-        <span>
-          License: <strong>MIT</strong>
-        </span>
       </nav>
-      <ZeitLogo />
     </div>
     <style jsx>{`
       footer {
@@ -49,10 +46,6 @@ const Footer = () => (
         width: 1000px;
         margin: 0 auto;
         padding: 62px 0;
-      }
-
-      .container :global(svg) {
-        fill: #eaeaea;
       }
 
       @media (max-width: 1036px) {

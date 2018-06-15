@@ -1,14 +1,5 @@
-import { Component } from 'react'
-import NotificationBanner from './intro/notification-banner'
 import Title from './intro/title'
 
-function Intro() {
-  return (
-    <>
-      <NotificationBanner />
-      <Title />
-    </>
-  )
-}
+const Intro = () => <Title />
 
 export default Intro

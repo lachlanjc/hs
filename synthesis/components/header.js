@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import Link from 'next/link'
 import NextLogo from '../components/icons/next-logo'
-import ZeitLogo from '../components/zeit-logo'
+import Avatar from '../components/avatar'
 import ToggleIcon from '../components/icons/toggle'
 
 const NavigationItems = ({ isMobile }) => (
@@ -138,15 +138,13 @@ export default class Header extends Component {
         >
           <div className="header__content">
             <Link href="/" prefetch>
-              <a className="logo">
-                <NextLogo />
-              </a>
+              <a className="logo">Good morning</a>
             </Link>
             <nav className="header__navigation">
               <NavigationItems />
             </nav>
-            <div className="zeit-logo">
-              <ZeitLogo />
+            <div className="avatar">
+              <Avatar />
             </div>
             <a className="header__nav-toggle" onClick={this.handleToggleMenu}>
               <ToggleIcon />
@@ -198,8 +196,10 @@ export default class Header extends Component {
           }
 
           .logo {
-            cursor: pointer;
-            display: flex;
+            color: inherit;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-decoration: none;
           }
 
           .header__navigation {
@@ -229,7 +229,7 @@ export default class Header extends Component {
 
           @media (max-width: 48em) {
             .header__navigation,
-            .zeit-logo {
+            .avatar {
               display: none;
             }
 

@@ -1,26 +1,6 @@
-const sortOrder = ['without-gender', 'coming-of-age']
 
-const mapping = {
-  'without-gender': {
-    title: 'My life without gender by Tyler Ford',
-    link:
-      'https://www.theguardian.com/world/2015/aug/07/my-life-without-gender-strangers-are-desperate-to-know-what-genitalia-i-have',
-    internalUrl: 'without-gender',
-    src:
-      'https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/8/7/1438969238511/075626f8-2ba7-4c67-85e2-cb6cd4a6f65f-2060x1236.jpeg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMS8zMS9mYWNlYm9va19kZWZhdWx0LnBuZw&s=7df1775f0641c43ae55126bdf0190df4'
-  },
-  'coming-of-age': {
-    title:
-      'In Coming-Of-Age Movies, Not Everyone Can Afford To Find Themselves',
-    link:
-      'https://www.buzzfeed.com/geoffnelson/not-everyone-can-afford-to-find-themselves?utm_term=.yfPWmpMXr#.ypzG5nNMw',
-    internalUrl: 'coming-of-age',
-    src:
-      'https://img.buzzfeed.com/buzzfeed-static/static/2017-12/27/13/asset/buzzfeed-prod-fastlane-02/sub-buzz-26613-1514398888-14.jpg?crop=1245:651;136,201'
-  }
-}
+const sortOrder = ["without-gender","coming-of-age","femme-simon","only-a-beer"]
 
-module.exports = {
-  sortOrder,
-  mapping
-}
+const mapping = {"without-gender":{"internalUrl":"without-gender","title":"My life without gender by Tyler Ford","link":"https://www.theguardian.com/world/2015/aug/07/my-life-without-gender-strangers-are-desperate-to-know-what-genitalia-i-have","width":1200,"height":630,"src":"https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/8/7/1438969238511/075626f8-2ba7-4c67-85e2-cb6cd4a6f65f-2060x1236.jpeg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMS8zMS9mYWNlYm9va19kZWZhdWx0LnBuZw&s=7df1775f0641c43ae55126bdf0190df4"},"coming-of-age":{"internalUrl":"coming-of-age","title":"In Coming-Of-Age Movies, Not Everyone Can Afford To Find Themselves","link":"https://www.buzzfeed.com/geoffnelson/not-everyone-can-afford-to-find-themselves","width":1245,"height":651,"src":"https://img.buzzfeed.com/buzzfeed-static/static/2017-12/27/13/asset/buzzfeed-prod-fastlane-02/sub-buzz-26613-1514398888-14.jpg?crop=1245:651;136,201"},"femme-simon":{"internalUrl":"femme-simon","title":"The Gay Men We See on Screen","link":"https://www.nytimes.com/2018/03/28/opinion/love-simon-gay-femme-hollywood.html","width":1050,"height":550,"src":"https://static01.nyt.com/images/2018/03/29/opinion/29tobia/29tobia-facebookJumbo.jpg"},"only-a-beer":{"internalUrl":"only-a-beer","title":"‘It’s only a beer’: the unwritten contracts between men and women","link":"https://www.theguardian.com/lifeandstyle/2018/may/29/its-only-a-beer-the-unwritten-contracts-between-men-and-women","src":"https://i.guim.co.uk/img/media/f7a68596b08817fba8da8d025e369067c6083591/0_178_3300_1979/master/3300.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMS8zMS9mYWNlYm9va19kZWZhdWx0LnBuZw&s=a535df3651cfe9fb70779c52d2efc0f8","width":1200,"height":630}}
+
+module.exports = { sortOrder, mapping }

@@ -2,15 +2,13 @@ import RoundButton from '../../round-button'
 
 const Title = () => (
   <section>
-    <h1>
-      React Applications<br /> Made Simple
-    </h1>
-    <p className="subtitle">
-      <strong>Next.js</strong> is a lightweight framework for static and
-      server&#8209;rendered applications.
+    <h1>Good morning.</h1>
+    <p>
+      In a world with more problems than ever, we need to take back the power.
     </p>
-    <RoundButton color="black" href="/learn">
-      Learn More
+    <p>Here’s a starter guide for young people.</p>
+    <RoundButton color="primary" href="/read">
+      Start reading »
     </RoundButton>
     <style jsx>{`
       section {
@@ -20,36 +18,28 @@ const Title = () => (
       }
       h1 {
         text-align: center;
-        font-size: 56px;
-        font-weight: 300;
+        font-size: 64px;
+        font-weight: 800;
         margin: 0;
         padding: 0;
       }
       p {
         text-align: center;
-        color: #555555;
-        font-size: 16px;
+        color: #666666;
+        font-size: 20px;
         font-weight: 400;
-        margin-top: 26px;
-        margin-bottom: 46px;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-top: 16px;
+        margin-bottom: 0;
+      }
+      p:last-of-type {
+        margin-bottom: 48px;
       }
       strong {
         color: #000000;
       }
-      br {
-        display: none;
-      }
       @media (max-width: 768px) {
         h1 {
-          font-size: 32px;
-        }
-      }
-
-      @media (max-width: 450px) {
-        br {
-          display: inline;
+          font-size: 48px;
         }
       }
     `}</style>
