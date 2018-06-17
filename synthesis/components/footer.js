@@ -5,9 +5,11 @@ const Footer = () => (
     <div className="container">
       <Avatar />
       <nav>
-        <a href="https://github.com/zeit/next.js/releases">Changelog</a>
-        <a className="github" href="https://github.com/zeit/next.js">
-          GitHub
+        <a
+          className="github"
+          href="https://github.com/lachlanjc/edu/blob/master/synthesis"
+        >
+          Source code
         </a>
       </nav>
     </div>
@@ -45,7 +47,7 @@ const Footer = () => (
         justify-content: space-between;
         width: 1000px;
         margin: 0 auto;
-        padding: 62px 0;
+        padding: 15px 0;
       }
 
       @media (max-width: 1036px) {

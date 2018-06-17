@@ -4,10 +4,10 @@ export const Blockquote = ({ children, ...props }) => (
 
     <style jsx>{`
       blockquote {
-        padding: 14px 0;
-        border-left: 6px solid #000;
+        padding: 12px 0;
+        border-left: 4px solid #000;
         margin-left: 0;
-        padding-left: 32px;
+        padding-left: 24px;
       }
 
       blockquote :global(p) {

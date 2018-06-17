@@ -1,38 +1,20 @@
 import { Fragment, Component } from 'react'
 import { Code } from '../../components/docs/text/code.js'
+import { convertToSnakeCase } from '../../lib/utilities'
 import _scrollIntoViewIfNeeded from 'scroll-into-view-if-needed'
 
 const navElements = [
-  'Setup',
-  'Automatic Code Splitting',
-  'CSS',
-  'Static file serving (e.g.: images)',
-  'Populating <head>',
-  'Fetching data and component lifecycle',
-  'Routing',
-  'Prefetching Pages',
-  'Custom server and routing',
-  'Dynamic Import',
-  'Custom <App>',
-  'Custom <Document>',
-  'Custom error handling',
-  'Reusing the built-in error page',
-  'Custom configuration',
-  'Customizing webpack config',
-  'Customizing babel config',
-  'Production deployment',
-  'Static HTML export',
-  'Multi Zones',
-  'Recipes',
-  'FAQ',
-  'Contributing'
+  'Welcome',
+  'The internet',
+  'Creation and consumumption',
+  'Make the new spotlight',
+  'Education',
+  'Stuck at high school forever',
+  'Take your education into your own hands',
+  'Represent.',
+  'Read like this',
+  'Why should I?'
 ]
-
-const convertToSnakeCase = string =>
-  string
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[?!]/g, '')
 
 function scrollIntoViewIfNeeded(elem, centerIfNeeded, options, config) {
   const finalElement = findClosestScrollableElement(elem)
@@ -148,9 +130,7 @@ export default class Sidebar extends React.Component {
     return (
       <div className="documentation__sidebar">
         <nav>
-          <span className="documentation__sidebar-heading">
-            Getting Started
-          </span>
+          <span className="documentation__sidebar-heading">The Guide</span>
           {navElements.map((item, i) => (
             <SidebarNavItem
               key={i}

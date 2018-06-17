@@ -7,6 +7,7 @@ import Header from '../../components/docs/header'
 import Sidebar from '../../components/docs/sidebar'
 import { H1, H2, H3, H4 } from '../../components/docs/text/headings'
 import { Blockquote } from '../../components/docs/text/quotes'
+import { Highlight } from '../../components/docs/text/highlights'
 import { InlineCode, Code } from '../../components/docs/text/code'
 import { GenericLink } from '../../components/docs/text/link'
 import Heading from '../../components/docs/heading'
@@ -113,7 +114,7 @@ export default class Documentation extends Component {
   render() {
     return (
       <Fragment>
-        <Head title="Getting Started">
+        <Head title="Read the Guide">
           <style
             dangerouslySetInnerHTML={{
               __html: `
@@ -134,10 +135,15 @@ export default class Documentation extends Component {
                 min-height: 100%;
                 margin: 0;
                 padding-bottom: 6rem;
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-family: "Neue Haas Unica Web", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", sans-serif;
                 text-rendering: optimizeLegibility;
-                line-height: 1.5;
-                font-size: 1.6rem;
+                line-height: 1.75;
+                font-size: 1.75rem;
+              }
+
+              p,
+              .serif {
+                font-family: "Tiempos Text Web","Georgia","Times New Roman",serif;
               }
 
               a {
@@ -152,6 +158,43 @@ export default class Documentation extends Component {
               ::selection {
                 background-color: #000;
                 color: #FFF;
+              }
+
+              .footnote {
+                border-radius: 6px;
+                padding: 1rem;
+                background-color: #fafafa;
+                color: #666666;
+                margin: 1rem 0;
+              }
+              .footnote.footnote--short {
+                display: flex;
+                align-items: center;
+              }
+              .footnote.footnote--short h4 {
+                margin-bottom: 0;
+                margin-right: 0.25rem;
+              }
+              .footnote h4 {
+                text-transform: uppercase;
+                letter-spacing: .1em;
+                font-size: 1.25rem;
+                font-weight: 400;
+                margin-top: 0;
+                margin-bottom: 0.25rem;
+              }
+              .footnote p {
+                margin: 0;
+                font-family: inherit;
+                font-size: 1.5rem;
+              }
+              .footnote p + p,
+              .footnote p + h4 {
+                margin-top: 0.75rem;
+              }
+              .footnote a {
+                color: inherit;
+                text-decoration: underline;
               }
             `
             }}
@@ -207,38 +250,13 @@ export default class Documentation extends Component {
   }
 }
 
-const DocH2 = ({ children }) => (
-  <>
-    <Heading lean>
-      <H2>{children}</H2>
-    </Heading>
-    <style jsx>{`
-       {
-        margin: 40px 0 0 0;
-      }
-    `}</style>
-  </>
-)
-
-const DocH3 = ({ children }) => (
-  <>
-    <Heading lean>
-      <H3>{children}</H3>
-    </Heading>
-    <style jsx>{`
-       {
-        margin: 30px 0 0 0;
-      }
-    `}</style>
-  </>
-)
-
 export const components = {
   h1: H1,
-  h2: DocH2,
-  h3: DocH3,
+  h2: H2,
+  h3: H3,
   h4: H4,
   blockquote: Blockquote,
+  strong: Highlight,
   code: Code,
   inlineCode: InlineCode,
   a: GenericLink

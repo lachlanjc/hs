@@ -7,7 +7,7 @@ const Title = () => (
       In a world with more problems than ever, we need to take back the power.
     </p>
     <p>Here’s a starter guide for young people.</p>
-    <RoundButton color="primary" href="/read">
+    <RoundButton color="primary" href="/docs">
       Start reading »
     </RoundButton>
     <style jsx>{`
@@ -19,7 +19,7 @@ const Title = () => (
       h1 {
         text-align: center;
         font-size: 64px;
-        font-weight: 800;
+        font-weight: 400;
         margin: 0;
         padding: 0;
       }

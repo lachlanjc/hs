@@ -18,14 +18,13 @@ function SlideInformation({ title, href }) {
 
         h2 {
           font-size: 32px;
-          font-weight: 200;
+          font-weight: 400;
           margin-bottom: 0;
         }
 
         a {
           color: #0000ff;
           font-size: 14px;
-          font-weight: 200;
           display: inline-flex;
           align-items: center;
           text-decoration: none;

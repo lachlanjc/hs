@@ -1,13 +1,10 @@
 import { GenericLink } from './text/link'
-import NextLogo from '../icons/next-logo'
 
 export default function Header() {
   return (
     <header>
       <GenericLink href="/">
-        <a className="logo">
-          <NextLogo />
-        </a>
+        <a>Good Morning</a>
       </GenericLink>
 
       <style jsx>{`
@@ -21,8 +18,8 @@ export default function Header() {
           padding: 0 56px;
         }
 
-        .logo :global(svg) {
-          height: 50px;
+        a {
+          color: #222;
         }
       `}</style>
     </header>

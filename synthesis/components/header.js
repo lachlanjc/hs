@@ -1,28 +1,16 @@
 import { Component } from 'react'
 import Link from 'next/link'
-import NextLogo from '../components/icons/next-logo'
 import Avatar from '../components/avatar'
 import ToggleIcon from '../components/icons/toggle'
 
 const NavigationItems = ({ isMobile }) => (
   <div className={`navigation-items ${isMobile ? 'is-mobile' : ''}`}>
     <Link href="/docs" prefetch>
-      <a>Docs</a>
+      <a>Guide</a>
     </Link>
     <Link href="/showcase" prefetch>
-      <a>Showcase</a>
+      <a>Resources</a>
     </Link>
-    <a href="https://github.com/zeit/next.js">GitHub</a>
-    <Link href="/learn">
-      <a>Learn</a>
-    </Link>
-    <a
-      href="https://spectrum.chat/next-js"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Chat
-    </a>
 
     <style jsx>{`
       a {
@@ -197,8 +185,6 @@ export default class Header extends Component {
 
           .logo {
             color: inherit;
-            text-transform: uppercase;
-            font-weight: 500;
             text-decoration: none;
           }
 
