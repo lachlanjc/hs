@@ -14,11 +14,10 @@ Website: [**lachlanjc.me/edu**](https://lachlanjc.me/edu)
 ## Tenth Grade
 - [**Greenhouse**](https://greenhouse.now.sh/) – Website urging for action on climate change.
 - [**Twenties**](https://twenties.now.sh/) – Presentation about consumerism in the 1920s US.
-- [***Their Eyes Were Watching God***](https://lachlanjc.me/edu/watching-god) - Essay about the book by Zora Neale Hurston.
 - [**L’Éducation Suisse**](https://swiss-edu.now.sh/) – Presentation about the education system in Switzerland (in French).
 - [**Sommeil**](https://sommeil.now.sh/) – Brochure about sleep (also in French).
 - [**Astrocolony**](https://lachlanjc.me/edu/astrocolony/site) – Brochure about a proposed space colony on Titan.
-- [**Le Petit Prince 14**](https://petit-prince-14.now.sh/) – Presentation about chapter 14 of Le Petit Prince.
+- [**Le Petit Prince 14**](https://petit-prince-14.now.sh/) – Presentation about chapter 14 of _Le Petit Prince_.
 
 ## Groups
 - [**Hack Club**](https://statehigh.hackclub.com/) – Website for Hack Club at State High.
