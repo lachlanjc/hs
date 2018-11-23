@@ -7,6 +7,7 @@ Website: [**lachlanjc.me/edu**](https://lachlanjc.me/edu)
 ## Eleventh Grade
 - [***Moby Dick*: Whales For Three**](https://lachlanjc.me/edu/moby-dick) – Web essay.
 - [***Their Eyes Were Watching God***](https://lachlanjc.me/edu/watching-god) – Web essay.
+- [**Suicide**](https://lachlanjc.me/edu/suicide) – Website about suicide for health class.
 - [**Future**](https://lachlanjc-future.now.sh/) – Website with (inaccurate) projections of my life.
 - [**Good Morning**](https://lachlanjc-synthesis.now.sh) – Web essay, “a starter guide for young people to take back the power.”
 
