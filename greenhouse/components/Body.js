@@ -10,7 +10,7 @@ import { Lead, SubLead, B, Separator } from './More'
 
 export default () => (
   <Container pt4>
-    <Lead>
+    <Lead pt2>
       Here’s a graph of <B>global temperature</B>, 1880–2014.
     </Lead>
     <SubLead>Temperature anomaly, ºF</SubLead>

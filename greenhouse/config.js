@@ -1,27 +1,23 @@
 import { split, map, join } from 'lodash'
 import { config } from 'axs'
-import palx from 'palx'
-
-const blue = '#067df7'
-export const palette = palx(blue)
-
-config.set({ colors: palette })
 
 export const colors = {
-  pink: palette.pink[5],
-  red: palette.red[5],
-  orange: palette.orange[5],
-  green: palette.teal[6],
-  blue,
-  navy: palette.blue[8],
+  pink: '#f7067f',
+  red: '#f70606',
+  orange: '#f77f06',
+  green: '#05df73',
+  blue: '#067df7',
+  navy: '#0352a1',
 
   white: '#ffffff',
-  snow: palette.gray[0],
-  smoke: palette.gray[2],
-  grey: palette.gray[7],
-  greyDark: palette.gray[8],
-  black: palette.gray[9]
+  snow: '#f8f9fa',
+  smoke: '#dde1e4',
+  grey: '#7d8a99',
+  greyDark: '#606d7b',
+  black: '#384048'
 }
+
+config.set({ colors })
 
 export const toRGB = hex => {
   const match = hex.toString(16).match(/[a-f0-9]{6}|[a-f0-9]{3}/i)

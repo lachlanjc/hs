@@ -37,11 +37,11 @@ const lines = [
   { id: 'gg', name: 'Greenhouse gases', color: colors.red, width: 2 },
   { id: 'human', name: 'Human', color: colors.orange, width: 2 },
   { id: 'natural', name: 'Natural', color: colors.green, width: 2 },
-  { id: 'aerosol', name: 'Aerosol use', color: palette.cyan[6], width: 1 },
-  { id: 'land', name: 'Land use', color: palette.green[6], width: 1 },
-  { id: 'orbit', name: 'Earth’s orbit', color: palette.indigo[6], width: 1 },
-  { id: 'ozone', name: 'Ozone', color: palette.violet[4], width: 1 },
-  { id: 'solar', name: 'Solar activity', color: palette.yellow[6], width: 1 },
+  { id: 'aerosol', name: 'Aerosol use', color: '#05dfdf', width: 1 },
+  { id: 'land', name: 'Land use', color: '#027702', width: 1 },
+  { id: 'orbit', name: 'Earth’s orbit', color: '#0505df', width: 1 },
+  { id: 'ozone', name: 'Ozone', color: '#b067fa', width: 1 },
+  { id: 'solar', name: 'Solar activity', color: '#dfdf05', width: 1 },
   { id: 'volcanic', name: 'Volcanoes', color: colors.pink, width: 1 }
 ]
 
