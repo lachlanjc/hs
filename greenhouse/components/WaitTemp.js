@@ -34,14 +34,15 @@ const WaitTemp = () => (
     </Heading>
     <UL>
       <LI mb1>
-        1º is the difference between <B>ice</B> and <B>water</B>
+        1º is the difference between <B>ice</B> & <B>water</B>
       </LI>
       <LI>
-        Temperature rose <B>7-12 ºF over ~5,000 years</B> as the ice ages ended
+        Temperature rose <B>7-12 ºF over ~5,000 years</B> when the ice&nbsp;age
+        ended
       </LI>
       <LI>
-        Now, a <B>2+ ºF rise in 130 years</B> <G>(2% the time)</G>, when the
-        climate should be cooling
+        We’re now seeing a <B>2+ ºF rise in 2% of the time</B>{' '}
+        <G>(130&nbsp;years)</G>, when the climate should be cooling
       </LI>
     </UL>
   </Box>

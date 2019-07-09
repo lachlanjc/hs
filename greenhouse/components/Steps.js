@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Text } from 'axs'
+import { Span } from 'axs-ui'
 import { colors } from '../config'
 import Container from './Container'
 import { UL, LI, B, G, Step, StepDetail } from './More'
@@ -56,15 +57,15 @@ const Steps = () => (
       </UL>
     </Step>
     <Step>
-      Turning off lights is easy, but real action will be in the form of new
-      laws.
-      <Text color={colors.blue} bold mb1>
-        Get involved—call your Congressperson.
-      </Text>
-      <StepDetail color={colors.black}>
+      Recycling seems easy, but legislation will be the real, lasting action.{' '}
+      <Span color={colors.green}>
+        Call your Congressperson to say you support the{' '}
+        <strong>Green New Deal</strong>.
+      </Span>
+      <StepDetail color={colors.black} mt2>
         63% of Americans are represented by a climate denier in Congress.
       </StepDetail>
-      <StepDetail color={colors.grey} mb2>
+      <StepDetail color={colors.grey} mb3>
         (who receive, on average, almost $1M from fossil fuel companies over
         their careers)
       </StepDetail>
