@@ -2,16 +2,16 @@ import React from 'react'
 import { Box, Text } from 'axs'
 import { colors } from '../config'
 import Container from './Container'
-import { UL, LI, B, G, Separator, Step, StepDetail } from './More'
+import { UL, LI, B, G, Step, StepDetail } from './More'
 
 const Steps = () => (
   <Container width={48} mt={128} p0>
     <Step>
-      <B>There is extremely broad agreement among scientists</B> that
-      climate change is real and caused by humans.
+      <B>There is extremely broad agreement among scientists</B> that climate
+      change is real and caused by humans.
       <StepDetail>
-        Including 97% of scientists, the U.S. National Academy of Science,
-        NOAA, NASA, and the scientific societies of all industrialized nations.
+        Including 97% of scientists, the U.S. National Academy of Science, NOAA,
+        NASA, and the scientific societies of all industrialized nations.
       </StepDetail>
     </Step>
     <Step>
@@ -24,35 +24,40 @@ const Steps = () => (
     </Step>
     <Step>
       The atmosphere now has{' '}
-      <B>~404 ppm CO<sub>2</sub></B> <G>(350 ppm is safe)</G>.{' '}
+      <B>
+        ~404 ppm CO<sub>2</sub>
+      </B>{' '}
+      <G>(350 ppm is safe)</G>.{' '}
       <StepDetail>
-        There is no way to undo our damage, but stopping carbon pollution will reduce further damage.
+        There is no way to undo our damage, but stopping carbon pollution will
+        reduce further damage.
       </StepDetail>
     </Step>
     <Step>
-      Scientists project{' '}<B>9+ ºF this century</B>
+      Scientists project <B>9+ ºF this century</B>
       —and 4º F would be disastrous.
       <StepDetail>
         The majority of models so far have underestimated warming.
       </StepDetail>
     </Step>
     <Step>
-      <B>Climate change impacts everything.</B>{' '}
-      It is certainly unethical to threaten 25% of species,
-      but the consequences of climate change to humans will be immense.
+      <B>Climate change impacts everything.</B> It is certainly unethical to
+      threaten 25% of species, but the consequences of climate change to humans
+      will be immense.
       <UL fontSize={4} color={colors.greyDark} mt2>
         <LI>
-          Torrential rain, floods, heat waves, and drought
-          will stress food and water supplies.
+          Torrential rain, floods, heat waves, and drought will stress food and
+          water supplies.
         </LI>
         <LI>
-          Mass migrations as coastal cities go underwater:
-          New York, Miami, New Orleans, San Francisco, Melbourne, etc.
+          Mass migrations as coastal cities go underwater: New York, Miami, New
+          Orleans, San Francisco, Melbourne, etc.
         </LI>
       </UL>
     </Step>
     <Step>
-      Turning off lights is easy, but real action will be in the form of new laws.
+      Turning off lights is easy, but real action will be in the form of new
+      laws.
       <Text color={colors.blue} bold mb1>
         Get involved—call your Congressperson.
       </Text>
@@ -60,7 +65,8 @@ const Steps = () => (
         63% of Americans are represented by a climate denier in Congress.
       </StepDetail>
       <StepDetail color={colors.grey} mb2>
-        (who receive, on average, almost $1M from fossil fuel companies over their careers)
+        (who receive, on average, almost $1M from fossil fuel companies over
+        their careers)
       </StepDetail>
       <Box is="a" href="http://usecalltoaction.com" target="_blank">
         <Box

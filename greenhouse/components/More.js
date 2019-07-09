@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Text } from 'axs'
-import { Flex, Heading, Span } from 'axs-ui'
+import { Span } from 'axs-ui'
 import Container from './Container'
 import { colors } from '../config'
 
@@ -12,23 +12,11 @@ export const SubLead = props => (
   <Text fontSize={3} center color={colors.grey} {...props} />
 )
 
-export const UL = ({ children, ...props }) => (
-  <Text is="ul" css={{ paddingLeft: 24 }} {...props}>
-    {children}
-  </Text>
-)
+export const UL = props => <Text is="ul" css={{ paddingLeft: 24 }} {...props} />
 
-export const OL = ({ children, ...props }) => (
-  <Text is="ol" css={{ paddingLeft: 24 }} {...props}>
-    {children}
-  </Text>
-)
+export const OL = props => <Text is="ol" css={{ paddingLeft: 24 }} {...props} />
 
-export const LI = ({ children, ...props }) => (
-  <Text is="li" css={{ marginBottom: 4 }} {...props}>
-    {children}
-  </Text>
-)
+export const LI = props => <Text is="li" css={{ marginBottom: 4 }} {...props} />
 
 export const B = props => <Span color={colors.blue} {...props} />
 export const G = props => <Span color={colors.grey} {...props} />

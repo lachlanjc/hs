@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from 'axs'
-import { replace } from 'lodash'
+import replace from 'lodash/replace'
 
 const Icon = ({ name = 'square', fill = '#ffffff', size = 16, ...props }) => (
   <Box

@@ -2,7 +2,6 @@ import React from 'react'
 import { Box, Text } from 'axs'
 import { Flex, Heading, Span } from 'axs-ui'
 import { colors } from '../config'
-import Icon from './Icon'
 
 export default () => (
   <Flex
@@ -23,8 +22,7 @@ export default () => (
     }}
   >
     <Heading level={1}>
-      Climate change is a
-      {' '}
+      Climate change is a{' '}
       <Span
         bg={colors.white}
         color={colors.navy}

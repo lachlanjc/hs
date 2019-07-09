@@ -1,6 +1,6 @@
 import React from 'react'
 import { VictoryChart, VictoryAxis, VictoryLine } from 'victory-chart'
-import { VictoryLabel, VictoryLegend, VictoryAnimation } from 'victory-core'
+import { VictoryLabel, VictoryLegend } from 'victory-core'
 import { map, reverse, take, takeRight } from 'lodash'
 import { colors, palette, fontFamily } from '../config'
 const data = require('../forcings-data.json')

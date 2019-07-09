@@ -1,8 +1,8 @@
 import React from 'react'
-import { Box, Text } from 'axs'
+import { Box } from 'axs'
 import { Heading } from 'axs-ui'
 import { colors } from '../config'
-import { UL, OL, LI, B, G } from './More'
+import { UL, LI, B, G } from './More'
 
 const WaitTemp = () => (
   <Box
@@ -37,13 +37,11 @@ const WaitTemp = () => (
         1º is the difference between <B>ice</B> and <B>water</B>
       </LI>
       <LI>
-        Temperature rose
-        {' '}<B>7-12 ºF over ~5,000 years</B>{' '}
-        as the ice ages ended
+        Temperature rose <B>7-12 ºF over ~5,000 years</B> as the ice ages ended
       </LI>
       <LI>
-        Now, a {' '}<B>2+ ºF rise in 130 years</B>{' '}<G>(2% the time)</G>,
-        when the climate should be cooling
+        Now, a <B>2+ ºF rise in 130 years</B> <G>(2% the time)</G>, when the
+        climate should be cooling
       </LI>
     </UL>
   </Box>
