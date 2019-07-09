@@ -23,7 +23,7 @@ export const colors = {
   black: palette.gray[9]
 }
 
-export const toRGB = (hex: string) => {
+export const toRGB = hex => {
   const match = hex.toString(16).match(/[a-f0-9]{6}|[a-f0-9]{3}/i)
   if (!match) {
     return [0, 0, 0]
@@ -47,13 +47,10 @@ export const toRGB = (hex: string) => {
   return [r, g, b]
 }
 
-export const makeRGBA = (rgb: Array<number>, opacity: number): string => {
-  return `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${opacity || 1})`
-}
+export const makeRGBA = (rgb, opacity) =>
+  `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${opacity || 1})`
 
-export const toRGBA = (hex: string, opacity: number): string => {
-  return makeRGBA(toRGB(hex), opacity)
-}
+export const toRGBA = (hex, opacity) => makeRGBA(toRGB(hex), opacity)
 
 export const fontFamily =
   "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif"
