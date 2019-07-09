@@ -12,7 +12,6 @@ export default () => (
     justifyContent="center"
     center
     css={{
-      backgroundImage: "url('/static/hero.jpg')",
       backgroundPositionY: '25%',
       backgroundSize: 'cover',
       height: '100vh',
@@ -20,18 +19,10 @@ export default () => (
       textShadow: '0 2px 1px rgba(0, 0, 0, .75)',
       boxShadow: 'inset 0 0 50vh 50vw rgba(0,0,0,.25)'
     }}
+    style={{ backgroundImage: 'url(/static/hero.jpg)' }}
   >
     <Heading level={1}>
-      Climate change is a{' '}
-      <Span
-        bg={colors.white}
-        color={colors.navy}
-        px2
-        py1
-        css={{ borderRadius: '2.5rem 1.5rem', textShadow: 'none' }}
-      >
-        serious threat.
-      </Span>
+      Climate change is a <Span color={colors.red}>serious threat.</Span>
     </Heading>
     <Heading level={2} css={{ fontWeight: 300 }} mt2>
       And we need to take action.
