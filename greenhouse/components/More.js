@@ -59,8 +59,14 @@ export const Separator = props => (
 export const Step = ({ children, ...props }) => (
   <Box {...props}>
     <Separator bg={colors.smoke} my3 />
-    <Box m0 fontSize={3} color={colors.black} children={children} />
+    <Box
+      m0
+      fontSize={3}
+      color={colors.black}
+      css={{ lineHeight: 1.375 }}
+      children={children}
+    />
   </Box>
 )
 
-export const StepDetail = props => <G is="p" m0 fontSize={4} {...props} />
+export const StepDetail = props => <G is="p" mt1 mb0 fontSize={4} {...props} />
