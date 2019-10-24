@@ -2,4 +2,4 @@
 
 A website about suicide.
 
-https://lachlanjc.me/edu/suicide
+https://lachlanjc.me/hs/suicide

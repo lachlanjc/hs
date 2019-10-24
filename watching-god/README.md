@@ -1,5 +1,5 @@
 # *Their Eyes Were Watching God*
 
-https://lachlanjc.me/edu/watching-god
+https://lachlanjc.me/hs/watching-god
 
 MIT License

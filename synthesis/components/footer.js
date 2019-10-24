@@ -7,7 +7,7 @@ const Footer = () => (
       <nav>
         <a
           className="github"
-          href="https://github.com/lachlanjc/edu/blob/master/synthesis"
+          href="https://github.com/lachlanjc/hs/blob/master/synthesis"
         >
           Source code
         </a>

@@ -1,5 +1,5 @@
 # Moby Dick
 
-Live: [lachlanjc.me/edu/moby-dick](https://lachlanjc.me/edu/moby-dick)
+Live: [lachlanjc.me/hs/moby-dick](https://lachlanjc.me/hs/moby-dick)
 
 MIT License
