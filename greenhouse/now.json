@@ -1,6 +1,0 @@
-{
-  "version": 2,
-  "alias": "greenhouse",
-  "name": "greenhouse",
-  "builds": [{ "src": "next.config.js", "use": "@now/next" }]
-}
