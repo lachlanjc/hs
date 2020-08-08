@@ -10,15 +10,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 512
-            }
-          },
-          'gatsby-remark-smartypants'
-        ]
+        plugins: ['gatsby-remark-smartypants']
       }
     },
     'gatsby-plugin-react-helmet',
