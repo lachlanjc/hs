@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start"
   },
   "author": "Lachlan Campbell",
@@ -12,10 +12,10 @@
     "axs": "^1.0.4",
     "axs-ui": "^1.0.4",
     "lodash": "^4.17.11",
-    "next": "^9.0.0",
+    "next": "^9.5.1",
     "palx": "1.0.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "victory": "^0.24.5"
   }
 }
