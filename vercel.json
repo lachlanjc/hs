@@ -1,10 +1,17 @@
 {
-  "trailingSlash": true,
   "github": { "silent": true },
   "rewrites": [
     {
       "source": "/astrocolony/(.+?)",
       "destination": "/astrocolony/site/$1"
+    },
+    {
+      "source": "/petit-prince-14/(.+?)",
+      "destination": "/petit-prince-14/site/$1"
+    },
+    {
+      "source": "/sommeil/(.+?)",
+      "destination": "/sommeil/site/$1"
     }
   ],
   "builds": [
