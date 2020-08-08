@@ -1,9 +1,10 @@
-const withMDX = require('@zeit/next-mdx')()
+const withMDX = require('@next/mdx')()
 const { mapping } = require('./showcase-manifest')
 
 const routes = Object.keys(mapping)
 
 module.exports = withMDX({
+  target: 'serverless',
   exportPathMap(defaultPathMap) {
     for (const route of routes) {
       defaultPathMap[`/showcase/${route}`] = {

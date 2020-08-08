@@ -1,4 +1,4 @@
-export default () => (
+const Arrow = () => (
   <svg
     width="13px"
     height="23px"
@@ -19,3 +19,5 @@ export default () => (
     </g>
   </svg>
 )
+
+export default Arrow

@@ -15,10 +15,9 @@ import NProgress from 'nprogress'
 import debounce from 'lodash.debounce'
 import RouterEvents from '../../lib/router-events'
 import { trackPageview } from '../../lib/analytics'
+import dynamic from 'next/dynamic'
 
-if (typeof window !== 'undefined') {
-  require('intersection-observer')
-}
+dynamic(() => import('intersection-observer'), { ssr: false })
 
 const start = debounce(NProgress.start, 200)
 RouterEvents.on('routeChangeStart', start)
@@ -195,6 +194,11 @@ export default class Documentation extends Component {
               .footnote a {
                 color: inherit;
                 text-decoration: underline;
+              }
+
+              h2,
+              h3 {
+                font-weight: 400;
               }
             `
             }}

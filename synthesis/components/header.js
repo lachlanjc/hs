@@ -5,13 +5,12 @@ import ToggleIcon from '../components/icons/toggle'
 
 const NavigationItems = ({ isMobile }) => (
   <div className={`navigation-items ${isMobile ? 'is-mobile' : ''}`}>
-    <Link href="/docs" prefetch>
+    <Link href="/docs">
       <a>Guide</a>
     </Link>
-    <Link href="/showcase" prefetch>
+    <Link href="/showcase">
       <a>Resources</a>
     </Link>
-
     <style jsx>{`
       a {
         text-decoration: none;

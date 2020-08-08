@@ -1,4 +1,4 @@
-export default () => (
+const Link = () => (
   <svg
     width="12px"
     height="12px"
@@ -43,3 +43,5 @@ export default () => (
     </g>
   </svg>
 )
+
+export default Link

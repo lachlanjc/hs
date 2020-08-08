@@ -2,7 +2,7 @@ import { Component } from 'react'
 import Page from '../components/page'
 import Slider from '../components/showcase/slider'
 import { sortOrder, mapping } from '../showcase-manifest'
-import { withRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import Screen from '../components/screen'
 
 // Returns the right slide index based on the current position
@@ -52,8 +52,10 @@ function calculateSlides(sortOrder, route) {
   }
 }
 
-function Showcase({ router: { query } }) {
-  const { item } = query
+const Showcase = () => {
+  const {
+    query: { item }
+  } = useRouter()
   const { currentSlide, previousSlide, nextSlide } = calculateSlides(
     sortOrder,
     item
@@ -71,4 +73,4 @@ function Showcase({ router: { query } }) {
   )
 }
 
-export default withRouter(Showcase)
+export default Showcase
