@@ -5,6 +5,7 @@ const routes = Object.keys(mapping)
 
 module.exports = withMDX({
   target: 'serverless',
+  basePath: '/synthesis',
   exportPathMap(defaultPathMap) {
     for (const route of routes) {
       defaultPathMap[`/showcase/${route}`] = {

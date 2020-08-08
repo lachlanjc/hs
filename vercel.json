@@ -16,6 +16,7 @@
   ],
   "builds": [
     { "src": "*", "use": "@vercel/static" },
+    { "src": "*/**", "use": "@vercel/static" },
     { "src": "synthesis/package.json", "use": "@vercel/next" },
     { "src": "greenhouse/package.json", "use": "@vercel/next" }
   ]
