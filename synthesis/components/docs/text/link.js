@@ -13,7 +13,7 @@ export const GenericLink = props => {
 }
 
 export const InternalLink = ({ href, as, children, error = false }) => (
-  <NativeLink prefetch href={href} as={as}>
+  <NativeLink href={href} as={as}>
     <a>
       {children}
 
