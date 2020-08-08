@@ -8,7 +8,7 @@ Website: [**lachlanjc.me/hs**](https://lachlanjc.me/hs)
 - [***Moby Dick*: Whales For Three**](https://lachlanjc.me/hs/moby-dick) – Web essay.
 - [***Their Eyes Were Watching God***](https://lachlanjc.me/hs/watching-god) – Web essay.
 - [**Suicide**](https://lachlanjc.me/hs/suicide) – Website about suicide for health class.
-- [**Future**](https://lachlanjc-future.now.sh/) – Website with (inaccurate) projections of my life.
+- [**Future**](https://future.lachlanjc.vercel.app/) – Website with (inaccurate) projections of my life.
 - [**Good Morning**](https://lachlanjc-synthesis.now.sh) – Web essay, "a starter guide for young people to take back the power."
 
 ## Tenth Grade

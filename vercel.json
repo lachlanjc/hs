@@ -1,0 +1,15 @@
+{
+  "trailingSlash": true,
+  "github": { "silent": true },
+  "rewrites": [
+    {
+      "source": "/astrocolony/(.+?)",
+      "destination": "/astrocolony/site/$1"
+    }
+  ],
+  "builds": [
+    { "src": "*", "use": "@vercel/static" },
+    { "src": "synthesis/package.json", "use": "@vercel/next" },
+    { "src": "greenhouse/package.json", "use": "@vercel/next" }
+  ]
+}
