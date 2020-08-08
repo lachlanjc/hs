@@ -7,8 +7,7 @@
     "clean": "rimraf dist",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
     "lint": "eslint --ext .js,.jsx .",
-    "start": "cross-env NODE_ENV=development node server.js",
-    "now-start": "cross-env NODE_ENV=production node server.js"
+    "start": "cross-env NODE_ENV=development node server.js"
   },
   "now": {
     "alias": "swiss-edu"
