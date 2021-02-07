@@ -5,7 +5,7 @@ import replace from 'lodash/replace'
 const Icon = ({ name = 'square', fill = '#ffffff', size = 16, ...props }) => (
   <Box
     is="img"
-    src={`//icon.now.sh/${name}/${size}/${replace(fill, '#', '')}`}
+    src={`https://microicon-clone.vercel.app/${name}/${size}/${replace(fill, '#', '')}`}
     alt={`${name} icon`}
     width={size}
     height={size}
