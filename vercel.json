@@ -3,35 +3,33 @@
   "github": { "silent": true },
   "rewrites": [
     {
-      "source": "/astrocolony/",
-      "destination": "/astrocolony/site/"
-    },
-    {
       "source": "/astrocolony/:path*",
       "destination": "/astrocolony/site/:path*"
-    },
-    {
-      "source": "/petit-prince-14/",
-      "destination": "/petit-prince-14/site/"
     },
     {
       "source": "/petit-prince-14/:path*",
       "destination": "/petit-prince-14/site/:path*"
     },
     {
-      "source": "/sommeil/",
-      "destination": "/sommeil/site/"
-    },
-    {
       "source": "/sommeil/:path*",
       "destination": "/sommeil/site/:path*"
     }
   ],
-  "builds": [
-    { "src": "*", "use": "@vercel/static" },
-    { "src": "*/**", "use": "@vercel/static" },
-    { "src": "future/package.json", "use": "@vercel/gatsby" },
-    { "src": "greenhouse/package.json", "use": "@vercel/next" },
-    { "src": "synthesis/package.json", "use": "@vercel/next" }
+  "redirects": [
+    {
+      "source": "/astrocolony/",
+      "destination": "/astrocolony/site/",
+      "permanent": false
+    },
+    {
+      "source": "/petit-prince-14/",
+      "destination": "/petit-prince-14/site/",
+      "permanent": false
+    },
+    {
+      "source": "/sommeil/",
+      "destination": "/sommeil/site/",
+      "permanent": false
+    },
   ]
 }
