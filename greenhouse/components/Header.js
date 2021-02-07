@@ -46,7 +46,7 @@ export default () => (
     >
       <Box
         is="img"
-        src={`//icon.now.sh/chevron/down/ffffff/32?strokeWidth=1`}
+        src={`//microicon-clone.vercel.app/chevron/down/ffffff/32?strokeWidth=1`}
         css={{
           animation: 'pulse .9s ease-in-out infinite'
         }}
