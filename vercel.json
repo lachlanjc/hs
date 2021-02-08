@@ -30,6 +30,6 @@
       "source": "/sommeil/",
       "destination": "/sommeil/site/",
       "permanent": false
-    },
+    }
   ]
 }
