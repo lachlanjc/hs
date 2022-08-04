@@ -20,8 +20,10 @@
   "devDependencies": {
     "prettier": "^1.10.2"
   },
-  "homepage": "https://lachlanjc.me/hs/future",
-  "keywords": ["gatsby"],
+  "homepage": "https://hs-future-lachlanjc.vercel.app/",
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "repository": {

@@ -32,6 +32,8 @@ injectGlobal`
   article {
     border-radius: 0 !important;
     box-shadow: .5rem .5rem 0 rgba(0,0,0,.25) !important;
+    background-color: #fff;
+    padding: 1.5rem;
   }
 `
 

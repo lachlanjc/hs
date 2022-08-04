@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
 import { Container, Box, Card, Heading, Text } from '@hackclub/design-system'
 import Body from '../components/Body'
 import Years from '../components/Years'

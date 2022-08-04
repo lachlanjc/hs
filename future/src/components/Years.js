@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box } from '@hackclub/design-system'
 
 const Years = Box.withComponent('main').extend`

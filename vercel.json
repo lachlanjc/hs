@@ -12,6 +12,11 @@
   ],
   "redirects": [
     {
+      "source": "/future",
+      "destination": "https://hs-future-lachlanjc.vercel.app",
+      "permanent": false
+    },
+    {
       "source": "/greenhouse",
       "destination": "https://greenhouse-lachlanjc.vercel.app",
       "permanent": false
