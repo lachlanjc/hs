@@ -1,4 +1,3 @@
-import { Component } from 'react'
 import Page from '../components/page'
 import Slider from '../components/showcase/slider'
 import { sortOrder, mapping } from '../showcase-manifest'
@@ -38,23 +37,23 @@ function calculateSlides(sortOrder, route) {
   const previousSlideIndex = normalizeSlideIndex(
     sortOrder,
     currentSlideIndex,
-    x => x - 1
+    (x) => x - 1
   )
   const nextSlideIndex = normalizeSlideIndex(
     sortOrder,
     currentSlideIndex,
-    x => x + 1
+    (x) => x + 1
   )
   return {
     currentSlide: mapIndexToRoute(currentSlideIndex),
     previousSlide: mapIndexToRoute(previousSlideIndex),
-    nextSlide: mapIndexToRoute(nextSlideIndex)
+    nextSlide: mapIndexToRoute(nextSlideIndex),
   }
 }
 
 const Showcase = () => {
   const {
-    query: { item }
+    query: { item },
   } = useRouter()
   const { currentSlide, previousSlide, nextSlide } = calculateSlides(
     sortOrder,

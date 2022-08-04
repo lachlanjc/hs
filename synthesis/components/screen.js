@@ -1,11 +1,9 @@
-import React from 'react'
-
 const Screen = ({ id, children, fullWidth = true, offset = null }) => (
   <div
     id={id}
     className={`screen`}
     style={{
-      minHeight: offset != null ? `calc(100vh - ${offset}px)` : ''
+      minHeight: offset != null ? `calc(100vh - ${offset}px)` : '',
     }}
   >
     <div className="wrap">{children}</div>

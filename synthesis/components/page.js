@@ -1,15 +1,12 @@
-import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import NProgress from 'nprogress'
 import debounce from 'lodash.debounce'
 import RouterEvents from '../lib/router-events'
-import { trackPageview } from '../lib/analytics'
 
 const start = debounce(NProgress.start, 200)
 RouterEvents.on('routeChangeStart', start)
-RouterEvents.on('routeChangeComplete', url => {
-  trackPageview(url)
+RouterEvents.on('routeChangeComplete', (url) => {
   start.cancel()
   NProgress.done()
 })

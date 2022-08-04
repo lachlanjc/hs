@@ -1,34 +1,24 @@
 {
-  "trailingSlash": true,
   "github": { "silent": true },
   "rewrites": [
     {
-      "source": "/astrocolony/:path*",
-      "destination": "/astrocolony/site/:path*"
+      "source": "/hero.jpg",
+      "destination": "/sommeil/site/hero.jpg"
     },
     {
-      "source": "/petit-prince-14/:path*",
-      "destination": "/petit-prince-14/site/:path*"
-    },
-    {
-      "source": "/sommeil/:path*",
-      "destination": "/sommeil/site/:path*"
+      "source": "/baby.jpg",
+      "destination": "/sommeil/site/baby.jpg"
     }
   ],
   "redirects": [
     {
-      "source": "/astrocolony/",
-      "destination": "/astrocolony/site/",
+      "source": "/greenhouse",
+      "destination": "https://greenhouse-lachlanjc.vercel.app",
       "permanent": false
     },
     {
-      "source": "/petit-prince-14/",
-      "destination": "/petit-prince-14/site/",
-      "permanent": false
-    },
-    {
-      "source": "/sommeil/",
-      "destination": "/sommeil/site/",
+      "source": "/synthesis",
+      "destination": "https://synthesis-lachlanjc.vercel.app",
       "permanent": false
     }
   ]

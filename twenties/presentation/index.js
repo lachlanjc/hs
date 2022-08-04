@@ -1,5 +1,5 @@
 // Import React
-import React from "react";
+import React from 'react'
 
 // Import Spectacle Core tags
 import {
@@ -13,70 +13,61 @@ import {
   List,
   Slide,
   Text,
-  S
-} from "spectacle";
-
-// Import image preloader util
-import preloader from "spectacle/lib/utils/preloader";
+  S,
+} from 'spectacle'
 
 // Import theme
-import createTheme from "spectacle/lib/themes/default";
+import createTheme from 'spectacle/lib/themes/default'
 
 // Require CSS
-require("normalize.css");
-require("spectacle/lib/themes/default/index.css");
+require('normalize.css')
+require('spectacle/lib/themes/default/index.css')
 
-const images = {
-  nyt: require("../assets/nyt.png")
-};
-
-preloader(images);
-
-const blue = "#1FB6FF";
+const blue = '#1FB6FF'
 const colors = {
   primary: blue,
 
-  pink: "#FF49DB",
-  red: "#FF4949",
-  green: "#13CE66",
-  blueLight: "#85D7FF",
+  pink: '#FF49DB',
+  red: '#FF4949',
+  green: '#13CE66',
+  blueLight: '#85D7FF',
   blue,
 
-  white: "#FFFFFF",
-  snow: "#F9FAFC",
-  smoke: "#E0E6ED",
-  grey: "#8492A6",
-  steel: "#273444",
-  black: "#1F2D3D"
-};
+  white: '#FFFFFF',
+  snow: '#F9FAFC',
+  smoke: '#E0E6ED',
+  grey: '#8492A6',
+  steel: '#273444',
+  black: '#1F2D3D',
+}
 
-const century = "Century Schoolbook L";
+const century = 'Century Schoolbook L, ui-serif, Spectral, serif'
 const theme = createTheme(colors, {
-  primary: "Futura",
-  secondary: century
-});
+  primary: 'Futura, system-ui, sans-serif',
+  secondary: century,
+})
 
-const I = props => <S type="italic" {...props} />;
-const B = props => <S type="bold" {...props} />;
-const H = props => <S type="normal" textColor="blue" {...props} />;
-const R = props => <S type="normal" textColor="red" {...props} />;
-const G = props => <S type="normal" textColor="green" {...props} />;
-const M = props => <S type="normal" textColor="grey" {...props} />;
-const UL = props => (
+const I = (props) => <S type="italic" {...props} />
+const B = (props) => <S type="bold" {...props} />
+const H = (props) => <S type="normal" textColor="blue" {...props} />
+const R = (props) => <S type="normal" textColor="red" {...props} />
+const G = (props) => <S type="normal" textColor="green" {...props} />
+const M = (props) => <S type="normal" textColor="grey" {...props} />
+const UL = (props) => (
   <List
     textColor="snow"
     textFont={century}
-    style={{ listStylePosition: "outside" }}
+    style={{ listStylePosition: 'outside' }}
     {...props}
   />
-);
+)
 
-const fs = [64, 48, 32, 24, 16];
-const caps = { textTransform: "uppercase", letterSpacing: ".1em" };
+const fs = [64, 48, 32, 24, 16]
+const caps = { textTransform: 'uppercase', letterSpacing: '.1em' }
 
 const Presentation = () => (
   <Deck
-    transition={["slide"]}
+    transition={['slide']}
     transitionDuration={256}
     progress="number"
     theme={theme}
@@ -126,8 +117,8 @@ const Presentation = () => (
           In the 1920s, the <H>economic boom</H> following World War I meant
           Americans were becoming richer than ever, and spending their money on
           a wide array of <H>innovative new technologies</H> and devices. They
-          bought the newly-advertised <H>consumer goods</H> through{" "}
-          <H>credit</H>, a new option that allowed the purchase of{" "}
+          bought the newly-advertised <H>consumer goods</H> through{' '}
+          <H>credit</H>, a new option that allowed the purchase of{' '}
           <H>cars and appliances</H> to be spread out over time, with interest.
           This created a <H>massive shift in the economy</H> towards today's.
         </Text>
@@ -144,10 +135,16 @@ const Presentation = () => (
         American wealth
       </Heading>
       <UL>
-        <ListItem>Per capita income: <G>↑9%</G></ListItem>
-        <ListItem>For the top 1%: <G>↑75%</G></ListItem>
+        <ListItem>
+          Per capita income: <G>↑9%</G>
+        </ListItem>
+        <ListItem>
+          For the top 1%: <G>↑75%</G>
+        </ListItem>
         <ListItem>Savings: top .1% held 1/3, top 2.3% held 2/3</ListItem>
-        <ListItem><H>80%</H> of Americans had <R>no savings</R></ListItem>
+        <ListItem>
+          <H>80%</H> of Americans had <R>no savings</R>
+        </ListItem>
       </UL>
       <Text
         textColor="blue"
@@ -277,7 +274,9 @@ const Presentation = () => (
             Credit + debt
           </Heading>
           <UL>
-            <ListItem><H>Installment plans</H> <M>(and interest)</M></ListItem>
+            <ListItem>
+              <H>Installment plans</H> <M>(and interest)</M>
+            </ListItem>
             <ListItem>Debt becoming acceptable</ListItem>
             <ListItem>
               <H>Credit cards</H> <M>(effectively debt)</M>
@@ -285,7 +284,7 @@ const Presentation = () => (
           </UL>
         </Fill>
         <Fill>
-          <Image height={512} src={images.nyt} />
+          <Image height={512} src="/twenties/nyt.png" />
         </Fill>
       </Layout>
     </Slide>
@@ -295,9 +294,15 @@ const Presentation = () => (
       transition="slide"
       align="center center"
     >
-      <Heading size={1} textColor="smoke" style={caps} fit>significant</Heading>
-      <Heading size={1} textColor="green" style={caps} fit>economic</Heading>
-      <Heading size={1} textColor="blue" style={caps} fit>change</Heading>
+      <Heading size={1} textColor="smoke" style={caps} fit>
+        significant
+      </Heading>
+      <Heading size={1} textColor="green" style={caps} fit>
+        economic
+      </Heading>
+      <Heading size={1} textColor="blue" style={caps} fit>
+        change
+      </Heading>
     </Slide>
     <Slide bgColor="steel" transition="slide" align="center center">
       <Heading textColor="snow" size={1} textSize={fs[0]} style={caps}>
@@ -322,23 +327,30 @@ const Presentation = () => (
         textAlign="left"
         margin="2rem 0 0"
       >
-        "The 1920s Credit Bubble." Daily Kos. Kos Media, LLC, 14 Jan. 2008. Web. 28 Apr. 2017.
+        "The 1920s Credit Bubble." Daily Kos. Kos Media, LLC, 14 Jan. 2008. Web.
+        28 Apr. 2017.
         <br />
         "1920s consumption." Khan Academy. Khan Academy, n.d. Web. 28 Apr. 2017.
         <br />
-        "American Credit Situation Seen in London as Menacing." The New York Times. The New York Times, 15 Oct. 1928. Web. 28 Apr. 2017.
+        "American Credit Situation Seen in London as Menacing." The New York
+        Times. The New York Times, 15 Oct. 1928. Web. 28 Apr. 2017.
         <br />
-        Green, John. "The Roaring 20's: Crash Course US History #32." Crash Course. YouTube, 04 Oct. 2013. Web. 28 Apr. 2017.
+        Green, John. "The Roaring 20's: Crash Course US History #32." Crash
+        Course. YouTube, 04 Oct. 2013. Web. 28 Apr. 2017.
         <br />
-        "[Herbert Hoover, Three-quarter Length Portrait, Seated, Facing Slightly Right, Listening to Radio]." Library of Congress. U.S. Government, 01 Jan. 1970. Web. 28 Apr. 2017.
+        "[Herbert Hoover, Three-quarter Length Portrait, Seated, Facing Slightly
+        Right, Listening to Radio]." Library of Congress. U.S. Government, 01
+        Jan. 1970. Web. 28 Apr. 2017.
         <br />
-        "House of a Thousand Windows." Wikimedia Commons. Wikimedia Project, 30 Jan. 2013. Web. 28 Apr. 2017.
+        "House of a Thousand Windows." Wikimedia Commons. Wikimedia Project, 30
+        Jan. 2013. Web. 28 Apr. 2017.
         <br />
-        "Paul Strand, Akeley Motion Picture Camera." The Met Museum. The Metropolitan Museum of Art, n.d. Web. 28 Apr. 2017.
+        "Paul Strand, Akeley Motion Picture Camera." The Met Museum. The
+        Metropolitan Museum of Art, n.d. Web. 28 Apr. 2017.
         <br />
         Wikimedia Commons. Wikimedia Project, 24 Apr. 2005. Web. 28 Apr. 2017.
       </Text>
     </Slide>
   </Deck>
-);
-export default Presentation;
+)
+export default Presentation

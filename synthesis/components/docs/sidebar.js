@@ -1,5 +1,4 @@
-import { Fragment, Component } from 'react'
-import { Code } from '../../components/docs/text/code.js'
+import { Component } from 'react'
 import { convertToSnakeCase } from '../../lib/utilities'
 import _scrollIntoViewIfNeeded from 'scroll-into-view-if-needed'
 
@@ -13,7 +12,7 @@ const navElements = [
   'Take your education into your own hands',
   'Represent.',
   'Read like this',
-  'Why should I?'
+  'Why should I?',
 ]
 
 function scrollIntoViewIfNeeded(elem, centerIfNeeded, options, config) {
@@ -78,7 +77,7 @@ export class SidebarNavItem extends Component {
         href={`#${convertToSnakeCase(item)}`}
         onClick={updateSelected}
         className={isActive ? 'active' : ''}
-        ref={ref => (this.activeNavItem = ref)}
+        ref={(ref) => (this.activeNavItem = ref)}
       >
         {item}
 

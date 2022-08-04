@@ -10,19 +10,16 @@ import { Blockquote } from '../../components/docs/text/quotes'
 import { Highlight } from '../../components/docs/text/highlights'
 import { InlineCode, Code } from '../../components/docs/text/code'
 import { GenericLink } from '../../components/docs/text/link'
-import Heading from '../../components/docs/heading'
 import NProgress from 'nprogress'
 import debounce from 'lodash.debounce'
 import RouterEvents from '../../lib/router-events'
-import { trackPageview } from '../../lib/analytics'
 import dynamic from 'next/dynamic'
 
 dynamic(() => import('intersection-observer'), { ssr: false })
 
 const start = debounce(NProgress.start, 200)
 RouterEvents.on('routeChangeStart', start)
-RouterEvents.on('routeChangeComplete', url => {
-  trackPageview(url)
+RouterEvents.on('routeChangeComplete', () => {
   start.cancel()
   NProgress.done()
 })
@@ -48,7 +45,7 @@ export default class Documentation extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentSelection: null
+      currentSelection: null,
     }
     this.contentNode = null
     this.observer = null
@@ -63,7 +60,7 @@ export default class Documentation extends Component {
     const nodes = [...this.contentNode.querySelectorAll('[id]')]
     const intersectingTargets = new Set()
 
-    this.observer = new IntersectionObserver(entries => {
+    this.observer = new IntersectionObserver((entries) => {
       for (const { isIntersecting, target } of entries) {
         if (isIntersecting) {
           intersectingTargets.add(target)
@@ -100,9 +97,9 @@ export default class Documentation extends Component {
     this.observer = null
   }
 
-  updateSelected = hash => {
+  updateSelected = (hash) => {
     this.setState({
-      currentSelection: hash
+      currentSelection: hash,
     })
   }
 
@@ -200,7 +197,7 @@ export default class Documentation extends Component {
               h3 {
                 font-weight: 400;
               }
-            `
+            `,
             }}
           />
         </Head>
@@ -220,7 +217,7 @@ export default class Documentation extends Component {
 
             <div
               className="documentation__content"
-              ref={ref => (this.contentNode = ref)}
+              ref={(ref) => (this.contentNode = ref)}
             >
               {this.props.children}
             </div>
@@ -263,5 +260,5 @@ export const components = {
   strong: Highlight,
   code: Code,
   inlineCode: InlineCode,
-  a: GenericLink
+  a: GenericLink,
 }
